@@ -30,7 +30,6 @@ h4 {
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
-    letter-spacing: 0.1em;
     font-variant: small-caps;
     color: #FFFFFF;
 }
@@ -60,4 +59,92 @@ h4 {
     line-height: 15px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+}
+
+.who-are-we {
+    background: url("/assets/waw-bg.png");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.who-are-we h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.who-are-we p {
+    text-align: justify;
+    font-size: 12px;
+}
+
+p span.blue {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: justify;
+}
+
+.who-are-we .btn {
+    width: 165px;
+    height: 33px;
+    background: #109FDD;
+    border-radius: 7px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.space {
+    padding: 50px;
+}
+
+.waw1 {
+    position: absolute;
+    left: 120px;
+    top: 18px;
+    width: 250px;
+    height: 200px;
+}
+
+.waw2 {
+    position: absolute;
+    left: 390px;
+    top: 47px;
+    width: 150px;
+    height: 170px;
+}
+
+.waw3 {
+    position: absolute;
+    top: 190px;
+    left: 150px;
+    width: 350px;
+    height: 170px;
+}
+
+.waw1-bg {
+    position: absolute;
+    left: 85px;
+    top: -10px;
+    width: 250px;
+    height: 200px;
+    background: rgba(140, 185, 226, 0.42);
+}
+
+.waw3-bg {
+    position: absolute;
+    left: 230px;
+    top: 250px;
+    width: 300px;
+    height: 140px;
+    background: rgba(140, 185, 226, 0.42);
 }
