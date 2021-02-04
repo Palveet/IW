@@ -104,7 +104,7 @@ p span.blue {
 }
 
 .space {
-    padding: 50px;
+    padding: 70px 50px;
 }
 
 .waw1 {
@@ -147,4 +147,8 @@ p span.blue {
     width: 300px;
     height: 140px;
     background: rgba(140, 185, 226, 0.42);
+}
+
+.top-space {
+    margin-top: 65px;
 }
