@@ -48,3 +48,14 @@ body {
     letter-spacing: 0.1em;
     color: #FFFFFF!important;
 }
+
+.overlay h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    color: #000000;
+}
