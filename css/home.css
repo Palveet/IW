@@ -378,3 +378,21 @@ p span.blue {
     left: -26px;
     width: 200px;
 }
+
+@media (max-width:800px) {
+    .space {
+        padding: 45px 45px;
+    }
+    .top-space {
+        margin-top: 180px;
+    }
+    .our-mentors .card {
+        margin: 35px;
+    }
+    .our-mentors {
+        padding: 100px 0px;
+    }
+    .our-projects .card {
+        margin: 30px 0px;
+    }
+}
