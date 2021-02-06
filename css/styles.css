@@ -59,3 +59,31 @@ body {
     font-variant: small-caps;
     color: #000000;
 }
+
+footer {
+    background: #E9EFF1;
+}
+
+footer h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    color: #464545;
+    padding: 42px 0px 0px 0px;
+}
+
+footer p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 0;
+    padding: 12px 0px 10px 0px;
+}
