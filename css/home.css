@@ -379,6 +379,12 @@ p span.blue {
     width: 200px;
 }
 
+@media (min-width:801px) {
+    .owl-carousel {
+        display: none!important;
+    }
+}
+
 @media (max-width:800px) {
     .space {
         padding: 45px 45px;
@@ -394,5 +400,8 @@ p span.blue {
     }
     .our-projects .card {
         margin: 30px 0px;
+    }
+    .hide-on-tab {
+        display: none;
     }
 }
