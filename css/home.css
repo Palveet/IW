@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+body {
+    background: url("/assets/bg.png");
+    background-size: 1500px 1000px;
+}
+
 .container {
     margin: 0;
 }
@@ -62,7 +67,6 @@ h4 {
 }
 
 .who-are-we {
-    background: url("/assets/waw-bg.png");
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -158,6 +162,7 @@ p span.blue {
     background-size: cover;
     width: 100vw;
     height: 120vh;
+    padding-top: 80px;
 }
 
 .our-services p {
@@ -213,11 +218,11 @@ p span.blue {
 }
 
 .our-mentors {
-    background: url("/assets/waw-bg.png");
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    padding: 100px;
+    padding: 80px;
+    background-repeat: repeat-y;
 }
 
 .our-mentors h1 {
@@ -253,11 +258,11 @@ p span.blue {
 }
 
 .our-projects {
-    background: url("/assets/our-services-bg.png");
+    background: url("/assets/our-projects-bg.png");
     background-size: cover;
     width: 100vw;
-    height: 120vh;
-    padding: 100px;
+    height: 140vh;
+    padding: 170px 100px 100px;
 }
 
 .our-projects .card-group {
@@ -311,7 +316,7 @@ p span.blue {
 }
 
 .join-our-community {
-    background: url("/assets/waw-bg.png");
+    background: url("/assets/bg.png");
     background-size: cover;
     width: 100vw;
     height: 100vh;
