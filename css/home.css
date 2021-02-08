@@ -1,12 +1,7 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body {
     background: url("/assets/bg.png");
-    background-size: 1500px 1000px;
+    background-size: 100vw 100vh;
+    padding-top: 91px;
 }
 
 .container {
@@ -17,7 +12,6 @@ body {
     background: url("/assets/intro_bg.png");
     width: 100vw;
     height: 100vh;
-    background-size: cover;
 }
 
 h1 {
@@ -333,10 +327,10 @@ p span.blue {
     border-bottom-right-radius: 0;
     position: absolute;
     top: -40px;
-    left: 193px;
-    padding: 50px;
+    right: 0;
+    padding: 50px 0px 50px 50px;
     height: 80vh;
-    width: 85%;
+    width: 85vw;
 }
 
 .join-grapido img {
@@ -344,7 +338,7 @@ p span.blue {
     width: 350px;
     height: 400px;
     top: -45px;
-    left: 105px;
+    right: 0;
 }
 
 .content {
@@ -390,12 +384,15 @@ p span.blue {
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:600px) {
     .space {
         padding: 45px 45px;
     }
     .top-space {
         margin-top: 180px;
+    }
+    .card {
+        width: 225px;
     }
     .our-mentors .card {
         margin: 35px;
@@ -408,5 +405,17 @@ p span.blue {
     }
     .hide-on-tab {
         display: none;
+    }
+    .owl-carousel {
+        padding: 0px 80px 0px;
+    }
+}
+
+@media(max-width:800px) {
+    .hide-on-tab {
+        display: none;
+    }
+    .owl-carousel {
+        padding: 0px 99px 0px;
     }
 }
