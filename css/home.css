@@ -323,12 +323,9 @@ p span.blue {
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
     position: absolute;
     top: -40px;
     right: 0;
-    padding: 50px 0px 50px 50px;
     height: 80vh;
     width: 85vw;
 }
@@ -370,6 +367,7 @@ p span.blue {
     line-height: 21px;
     text-align: justify;
     color: rgba(0, 0, 0, 0.72);
+    padding-right: 40px;
 }
 
 .content-1 .btn {
@@ -425,6 +423,9 @@ p span.blue {
 }
 
 @media(max-width:1050px) {
+    .top-space {
+        margin-top: 385px;
+    }
     .hide-on-tab {
         display: none;
     }
@@ -436,18 +437,78 @@ p span.blue {
         height: 60px;
     }
     .our-mentors {
-        height: 35vh;
+        height: 80vh;
     }
     .our-projects {
         height: 80vh;
-        padding: 285px 80px 100px;
+        padding: 125px 80px 100px;
     }
     .our-mentors .card {
         height: 250px;
         margin: 0px 14px;
     }
+    .our-projects .card {
+        margin: 30px 30px;
+        height: 200px;
+    }
+    .grapido {
+        margin-top: 5px;
+    }
     .our-mentors .card-title,
     .our-projects .card-title {
         font-size: 13px;
+    }
+    .overlay {
+        height: 100vh;
+    }
+    .join-grapido img {
+        position: absolute;
+        width: 300px;
+        height: 350px;
+        top: -70px;
+        right: 0;
+    }
+    .content {
+        position: absolute;
+        top: 20px;
+        left: 60px;
+    }
+    .content-1 {
+        position: absolute;
+        left: 60px;
+    }
+    .content-1 h4,
+    .content h4 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+    .content-1 p {
+        font-size: 12px;
+        line-height: 12px;
+        padding-right: 20px;
+    }
+    .content-1 .btn {
+        width: 165px;
+        height: 33px;
+        background: #109FDD;
+        border-radius: 7px;
+    }
+    .google-play {
+        position: relative;
+        width: 165px;
+    }
+    .google-play img {
+        position: absolute;
+        top: -14px;
+        left: -40px;
+        width: 200px;
+    }
+    h1 {
+        font-size: 35px;
     }
 }
