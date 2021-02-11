@@ -512,3 +512,70 @@ p span.blue {
         font-size: 35px;
     }
 }
+
+@media (max-width: 575.98px) {
+    .waw1 {
+        position: absolute;
+        left: 0px;
+        top: 18px;
+        width: 200px;
+        height: 150px;
+    }
+    .waw2 {
+        position: absolute;
+        left: 210px;
+        top: 47px;
+        width: 100px;
+        height: 120px;
+    }
+    .waw3 {
+        position: absolute;
+        top: 150px;
+        left: 22px;
+        width: 300px;
+        height: 120px;
+    }
+    .waw1-bg {
+        position: absolute;
+        left: -20px;
+        top: -10px;
+        width: 200px;
+        height: 150px;
+        background: rgba(140, 185, 226, 0.42);
+    }
+    .waw3-bg {
+        position: absolute;
+        left: 50px;
+        top: 180px;
+        width: 300px;
+        height: 120px;
+        background: rgba(140, 185, 226, 0.42);
+    }
+    .who-are-we h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .space {
+        padding: 45px 45px;
+    }
+    .top-space {
+        margin-top: 325px;
+    }
+    p span.blue {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .who-are-we p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 15px;
+        margin: 10px;
+    }
+    .our-services-content {
+        margin-top: 135px;
+        padding: 0px 62px;
+    }
+    .our-mentors p {
+        padding: 0px 45px;
+    }
+}
