@@ -1,6 +1,6 @@
 body {
     background: url("/assets/bg.png");
-    background-size: 100vw 100vh;
+    background-size: contain;
     padding-top: 91px;
 }
 
@@ -10,6 +10,8 @@ body {
 
 .intro {
     background: url("/assets/intro_bg.png");
+    background-repeat-y: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
 }
@@ -63,7 +65,6 @@ h4 {
 .who-are-we {
     width: 100vw;
     height: 100vh;
-    background-size: cover;
 }
 
 .who-are-we h1 {
@@ -190,20 +191,20 @@ p span.blue {
 
 .web-dev {
     position: absolute;
-    top: 250px;
-    left: 60px;
+    top: 280px;
+    left: 10px;
 }
 
 .app-dev {
     position: absolute;
-    top: 200px;
-    left: 320px;
+    top: 220px;
+    left: 280px;
 }
 
 .bus-sol {
     position: absolute;
-    top: 130px;
-    left: 580px;
+    top: 150px;
+    left: 550px;
 }
 
 .our-services-content {
@@ -418,7 +419,7 @@ p span.blue {
         display: none;
     }
     .owl-carousel {
-        padding: 0px 80px 0px;
+        padding: 0px 80px!important;
     }
 }
 
@@ -429,8 +430,14 @@ p span.blue {
     .hide-on-tab {
         display: none;
     }
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot {
+        font-size: 30px;
+        color: white;
+    }
     .owl-carousel {
-        padding: 0px 115px 0px;
+        padding: 0px 77px;
     }
     .card-img-top {
         width: 70px!important;
@@ -444,8 +451,14 @@ p span.blue {
         padding: 125px 80px 100px;
     }
     .our-mentors .card {
+        width: 205px;
         height: 250px;
         margin: 0px 14px;
+    }
+    .mentor-social img {
+        display: inline!important;
+        width: 30px!important;
+        height: 30px;
     }
     .our-projects .card {
         margin: 30px 30px;
@@ -556,7 +569,7 @@ p span.blue {
         line-height: 30px;
     }
     .space {
-        padding: 45px 45px;
+        padding: 45px 30px;
     }
     .top-space {
         margin-top: 325px;
@@ -573,7 +586,7 @@ p span.blue {
     }
     .our-services-content {
         margin-top: 135px;
-        padding: 0px 62px;
+        padding: 0px 60px;
     }
     .our-mentors p {
         padding: 0px 45px;
