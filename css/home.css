@@ -525,8 +525,42 @@
             .hide-on-tab {
                 display: none;
             }
+            .waw1 {
+                position: absolute;
+                left: 130px;
+                top: 100%;
+                width: 13em;
+                height: 11em;
+            }
             .waw2 {
-                left: 55%;
+                position: absolute;
+                left: 370px;
+                top: 58px;
+                width: 7em;
+                height: 7em;
+            }
+            .waw3 {
+                position: absolute;
+                top: 150px;
+                left: 175px;
+                width: 18em;
+                height: 9em;
+            }
+            .waw1-bg {
+                position: absolute;
+                left: 90px;
+                top: -30px;
+                width: 13em;
+                height: 11em;
+                background: rgba(140, 185, 226, 0.42);
+            }
+            .waw3-bg {
+                position: absolute;
+                left: 200px;
+                top: 190px;
+                width: 18em;
+                height: 9em;
+                background: rgba(140, 185, 226, 0.42);
             }
             .owl-carousel .owl-nav button.owl-next,
             .owl-carousel .owl-nav button.owl-prev,
@@ -569,7 +603,7 @@
                 height: 30px;
             }
             .our-projects .card {
-                margin: 30px 0px;
+                margin: 20px 0!important;
                 height: 200px;
             }
             .grapido {
@@ -631,6 +665,10 @@
             }
             h1 {
                 font-size: 35px;
+            }
+            .space-mob {
+                position: absolute;
+                left: 10%;
             }
         }
         
@@ -716,22 +754,27 @@
                 margin: 0 auto;
             }
             .our-projects {
-                height: 100vh;
+                height: 110vh;
                 padding: 125px 45px 100px;
             }
             .our-projects .card {
                 width: 100%;
-                margin: 0 auto;
+                margin: 0!important;
+            }
+            .join-our-community {
+                padding: 15px 0px 75px 75px;
+                height: 100vh;
             }
             .join-grapido img {
                 position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 3%;
+                width: 60%;
+                height: 80%;
+                top: 25%;
                 right: 0;
             }
             h1 {
-                font-size: 1.2em
+                font-size: 1.2em;
+                line-height: 1em;
             }
             .content-1 h4,
             .content h4 {
@@ -744,11 +787,39 @@
                 color: #000000;
             }
             .content-1 p {
-                font-size: 0.75em;
-                line-height: 0.75em;
+                font-size: 1em;
+                line-height: 0.9em;
                 padding-right: 20px;
             }
+            .content {
+                position: absolute;
+                top: 30%;
+            }
+            .content-1 {
+                top: 10%;
+            }
             .our-services {
-                height: 130vh;
+                height: 140vh;
+            }
+            .content-1 .btn {
+                width: 110px;
+                height: 25px;
+                background: #109FDD;
+                border-radius: 2px;
+                font-size: 8px;
+            }
+            .google-play {
+                position: relative;
+                width: 130px;
+            }
+            .google-play img {
+                position: absolute;
+                top: -10px;
+                left: -40px;
+                width: 170px;
+            }
+            .space-mob {
+                position: absolute;
+                left: 10%;
             }
         }
