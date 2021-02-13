@@ -20,6 +20,8 @@
             position: absolute;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+            width: inherit;
+            height: inherit;
         }
         
         .flip-card-back {
@@ -451,19 +453,44 @@
                 padding: 70px 0px;
             }
             .waw1 {
-                left: 15%;
-            }
-            .waw1-bg {
-                left: 7%;
+                position: absolute;
+                left: 130px;
+                top: 14%;
+                width: 13em;
+                height: 11em;
             }
             .waw2 {
-                left: 64%;
+                position: absolute;
+                left: 370px;
+                top: 19%;
+                width: 7em;
+                height: 7em;
             }
             .waw3 {
-                left: 20%;
+                position: absolute;
+                top: 33%;
+                left: 175px;
+                width: 18em;
+                height: 9em;
+            }
+            .who-are-we {
+                height: 50vh;
+            }
+            .waw1-bg {
+                position: absolute;
+                left: 90px;
+                top: 11%;
+                width: 13em;
+                height: 11em;
+                background: rgba(140, 185, 226, 0.42);
             }
             .waw3-bg {
-                left: 35%;
+                position: absolute;
+                left: 40%;
+                top: 40%;
+                width: 18em;
+                height: 9em;
+                background: rgba(140, 185, 226, 0.42);
             }
             .who-are-we p {
                 font-size: 1em;
