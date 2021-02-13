@@ -30,6 +30,7 @@ body {
     height: 80px;
     margin: 0 30%;
     border: none;
+    border-radius: 50%;
 }
 
 .pos {
@@ -49,9 +50,52 @@ body {
     z-index: 1000;
 }
 
+.right-drc {
+    position: absolute;
+    display: flex;
+    top: 25%;
+    right: -8%;
+    z-index: 1000;
+}
+
+.right-drc .card {
+    display: inline-block;
+    width: 200px;
+    height: 212px;
+    background: #F7F9FA;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px 0px;
+}
+
 .content {
     width: 650px;
     height: 425px;
+    background: rgba(117, 186, 216, 0.14);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 30px 0;
+}
+
+.content-big {
+    width: 650px;
+    height: 665px;
+    background: rgba(117, 186, 216, 0.14);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 30px 0;
+}
+
+.content-big-lsr {
+    width: 650px;
+    height: 580px;
     background: rgba(117, 186, 216, 0.14);
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
@@ -88,12 +132,85 @@ h3 {
     font-variant: small-caps;
 }
 
-.content p {
+.content p,
+.content-big p,
+.content-big-lsr p {
     font-family: Quicksand;
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
-    line-height: 21px;
+    font-size: 1em;
+    line-height: 1.2em;
     text-align: justify;
     color: rgba(0, 0, 0, 0.72);
+}
+
+@media(min-width:1000px) {
+    .hide-on-lg {
+        display: none;
+    }
+}
+
+@media(max-width:1195px) {
+    .pos {
+        left: 10%;
+    }
+    .right-drc {
+        right: -27%;
+    }
+    .right {
+        right: 12%;
+    }
+    .content-big,
+    .content-big-lsr,
+    .content {
+        height: 30%;
+        width: 80%;
+        margin: 10px auto 80px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hide-on-mob {
+        display: none;
+    }
+    .content-big,
+    .content-big-lsr,
+    .content {
+        height: 30%;
+        width: 80%;
+        margin: 10px auto 80px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card {
+        width: 165px;
+        margin: 20px 10px;
+    }
+    .card-title {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+    h5 {
+        margin: 0px 6px;
+    }
+    .content p,
+    .content-big p,
+    .content-big-lsr p {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8em;
+        line-height: 1.2em;
+        text-align: justify;
+        color: rgba(0, 0, 0, 0.72);
+    }
+    .content-big,
+    .content-big-lsr,
+    .content {
+        height: 30%;
+        width: 80%;
+        margin: 10px auto 80px;
+        padding: 10%;
+    }
 }

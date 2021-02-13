@@ -475,6 +475,9 @@
         .hide-on-tab {
             display: none;
         }
+        .waw2 {
+            left: 55%;
+        }
         .owl-carousel .owl-nav button.owl-next,
         .owl-carousel .owl-nav button.owl-prev,
         .owl-carousel button.owl-dot {
@@ -585,8 +588,14 @@
         .owl-carousel {
             padding: 0% 21%!important;
         }
+        .pictures {
+            padding-left: 20%;
+        }
         .card {
             width: 100%;
+        }
+        .who-are-we {
+            height: 120vh;
         }
         .waw1 {
             position: absolute;
@@ -597,7 +606,7 @@
         }
         .waw2 {
             position: absolute;
-            left: 60%;
+            left: 170px;
             top: 47px;
             width: 7em;
             height: 7em;
@@ -688,5 +697,8 @@
             font-size: 0.75em;
             line-height: 0.75em;
             padding-right: 20px;
+        }
+        .our-services {
+            height: 130vh;
         }
     }
