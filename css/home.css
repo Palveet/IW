@@ -100,13 +100,13 @@
         
         .who-are-we p {
             text-align: justify;
-            font-size: 12px;
+            font-size: 1em;
         }
         
         p span.blue {
             font-style: normal;
             font-weight: 500;
-            font-size: 27px;
+            font-size: 1.8em;
             line-height: 33px;
             text-align: justify;
         }
@@ -130,43 +130,59 @@
         
         .waw1 {
             position: absolute;
-            left: 120px;
-            top: 18px;
-            width: 250px;
-            height: 200px;
+            /* left: 120px;*/
+            left: 18%;
+            top: 5%;
+            /*top: 18px;*/
+            width: 45%;
+            height: 40%;
+            /*width: 250px;
+            height: 200px;*/
         }
         
         .waw2 {
             position: absolute;
-            left: 390px;
-            top: 47px;
-            width: 150px;
-            height: 170px;
+            /*left: 390px;*/
+            left: 65%;
+            top: 9%;
+            /* top: 47px;*/
+            width: 30%;
+            height: 34%;
+            /*width: 150px;
+            height: 170px;*/
         }
         
         .waw3 {
             position: absolute;
-            top: 190px;
-            left: 150px;
-            width: 350px;
-            height: 170px;
+            /*top: 190px;*/
+            top: 40%;
+            /*left: 150px;*/
+            left: 30%;
+            /* width: 350px;
+            height: 170px;*/
+            width: 60%;
+            height: 35%;
         }
         
         .waw1-bg {
             position: absolute;
-            left: 85px;
-            top: -10px;
-            width: 250px;
-            height: 200px;
+            /*left: 85px;*/
+            left: 12%;
+            top: 0%;
+            width: 45%;
+            height: 40%;
+            /*width: 250px;
+            height: 200px;*/
             background: rgba(140, 185, 226, 0.42);
         }
         
         .waw3-bg {
             position: absolute;
-            left: 230px;
-            top: 250px;
-            width: 300px;
-            height: 140px;
+            /*left: 230px;*/
+            left: 35%;
+            top: 45%;
+            width: 60%;
+            height: 35%;
             background: rgba(140, 185, 226, 0.42);
         }
         
@@ -289,7 +305,7 @@
             background-size: cover;
             width: 100vw;
             height: 140vh;
-            padding: 30% 0% 10%;
+            padding: 30% 0% 20%;
         }
         
         .our-projects .card-group {
@@ -650,7 +666,7 @@
                 top: 140px;
                 left: 6%;
                 width: 16em;
-                height: 8em
+                height: 8em;
             }
             .waw1-bg {
                 position: absolute;
@@ -662,7 +678,7 @@
             }
             .waw3-bg {
                 position: absolute;
-                left: 50px;
+                left: 30px;
                 top: 180px;
                 width: 16em;
                 height: 8em;
