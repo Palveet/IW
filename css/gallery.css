@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
@@ -42,7 +42,7 @@ h1 {
 }
 
 .intro p {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -65,7 +65,7 @@ img {
 }
 
 h5 {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
