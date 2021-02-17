@@ -448,7 +448,7 @@
                                         }
                                     }
                                     
-                                    @media (max-width: 1199.98px) {
+                                    @media (max-width: 1023.98px) {
                                         .space {
                                             padding: 70px 0px;
                                         }
@@ -474,7 +474,7 @@
                                             height: 9em;
                                         }
                                         .who-are-we {
-                                            height: 75vmax;
+                                            height: 80vmax;
                                         }
                                         .waw1-bg {
                                             position: absolute;
@@ -504,6 +504,9 @@
                                         }
                                         .our-services-content {
                                             padding-left: 20px;
+                                        }
+                                        .our-services p {
+                                            text-align: center;
                                         }
                                         .web-dev {
                                             left: -5%;
@@ -796,6 +799,9 @@
                                             width: 100%;
                                             margin: 0!important;
                                         }
+                                        .our-projects .card-title {
+                                            font-size: 11px;
+                                        }
                                         .join-our-community {
                                             padding: 15px 0px 75px 75px;
                                             height: 100vh;
@@ -822,7 +828,7 @@
                                             color: #000000;
                                         }
                                         .content-1 p {
-                                            font-size: 1em;
+                                            font-size: 0.8em;
                                             line-height: 0.9em;
                                             padding-right: 20px;
                                         }
@@ -837,25 +843,25 @@
                                             height: 100vmax;
                                         }
                                         .content-1 .btn {
-                                            width: 110px;
+                                            width: 100px;
                                             height: 25px;
                                             background: #109FDD;
                                             border-radius: 2px;
-                                            font-size: 8px;
+                                            font-size: 0.2em;
                                         }
                                         .google-play {
                                             position: relative;
-                                            width: 130px;
+                                            width: 110px;
                                         }
                                         .google-play img {
                                             position: absolute;
-                                            top: -10px;
+                                            top: -7px;
                                             left: -40px;
-                                            width: 170px;
+                                            width: 150px;
                                         }
                                         .space-mob {
                                             position: absolute;
-                                            left: 10%;
+                                            left: 15%;
                                         }
                                         .who-are-we .btn {
                                             width: 130px;
@@ -884,5 +890,30 @@
                                         }
                                         .our-mentors {
                                             height: 90vmax;
+                                        }
+                                        .our-projects {
+                                            height: 110vmax;
+                                        }
+                                        .our-projects p {
+                                            text-align: justify;
+                                        }
+                                        .waw1-bg {
+                                            position: absolute;
+                                            left: -35px;
+                                            top: -10px;
+                                            width: 10em;
+                                            height: 8em;
+                                            background: rgba(140, 185, 226, 0.42);
+                                        }
+                                        .space-mob {
+                                            position: absolute;
+                                            left: 12%;
+                                        }
+                                        .waw2 {
+                                            position: absolute;
+                                            left: 160px;
+                                            top: 47px;
+                                            width: 6em;
+                                            height: 7em;
                                         }
                                     }
