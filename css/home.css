@@ -88,7 +88,7 @@
                                     
                                     .who-are-we {
                                         width: 100vw;
-                                        height: 100vh;
+                                        height: 50vmax;
                                     }
                                     
                                     .who-are-we h1 {
@@ -196,7 +196,7 @@
                                         background: url("/assets/our-services-bg.png");
                                         background-size: cover;
                                         width: 100vw;
-                                        height: 120vh;
+                                        height: 75vmax;
                                         padding-top: 80px;
                                     }
                                     
@@ -261,7 +261,7 @@
                                     .our-mentors {
                                         background-size: cover;
                                         width: 100vw;
-                                        height: 100vh;
+                                        height: 40vmax;
                                         padding: 80px;
                                         background-repeat: repeat-y;
                                     }
@@ -306,7 +306,7 @@
                                         background: url("/assets/our-projects-bg.png");
                                         background-size: cover;
                                         width: 100vw;
-                                        height: 140vh;
+                                        height: 70vmax;
                                         padding: 30% 0% 20%;
                                     }
                                     
@@ -325,16 +325,16 @@
                                     }
                                     
                                     .our-projects .card {
-                                        width: 4em;
-                                        height: 300px;
+                                        width: 200px;
+                                        height: 230px;
                                         background: #F7F9FA;
                                         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
                                         border-radius: 10px;
-                                        margin: 30px 90px!important;
-                                        padding: 3%;
+                                        margin: 5% 10%!important;
+                                        padding: 1% 0%;
                                     }
                                     
-                                    .our-project .card-title {
+                                    .our-projects .card-title {
                                         font-family: 'Montserrat', sans-serif;
                                         font-style: normal;
                                         font-weight: 500;
@@ -346,26 +346,29 @@
                                     }
                                     
                                     .srmpedia {
-                                        width: 160px;
-                                        height: 170px;
+                                        width: 100%;
+                                        height: 100%;
+                                        padding: 0 15%;
                                     }
                                     
                                     .grapido {
-                                        width: 160px;
-                                        height: 150px;
-                                        margin-top: 20px;
+                                        width: 100%;
+                                        height: 100%;
+                                        margin-top: 12px;
+                                        padding: 0 15%;
                                     }
                                     
                                     .swiftcare {
-                                        width: 182px;
-                                        height: 182px;
+                                        width: 100%;
+                                        height: 100%;
+                                        padding: 0 15%;
                                     }
                                     
                                     .join-our-community {
                                         background: url("/assets/bg.png");
                                         background-size: cover;
                                         width: 100vw;
-                                        height: 100vh;
+                                        height: 50vmax;
                                         padding: 100px 0px 100px 100px;
                                         position: relative;
                                     }
@@ -378,7 +381,7 @@
                                         position: absolute;
                                         top: -40px;
                                         right: 0;
-                                        height: 80vh;
+                                        height: 40vmax;
                                         width: 85vw;
                                     }
                                     
