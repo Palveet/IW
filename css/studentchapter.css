@@ -178,7 +178,10 @@ h3 {
     .content {
         height: 30%;
         width: 80%;
-        margin: 10px auto 80px;
+        margin: 10px auto 0px;
+    }
+    .leads {
+        margin-bottom: 80px;
     }
 }
 
@@ -210,7 +213,10 @@ h3 {
     .content {
         height: 30%;
         width: 80%;
-        margin: 10px auto 80px;
+        margin: 10px auto 0px;
         padding: 10%;
+    }
+    .leads {
+        margin-bottom: 80px;
     }
 }
