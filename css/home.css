@@ -4,8 +4,14 @@
                                     padding-top: 91px;
                                 }
                                 
-                                .map img {
+                                .map {
+                                    position: relative;
+                                }
+                                
+                                .map .ind {
                                     margin-top: 5%;
+                                    width: 80%;
+                                    height: 90%;
                                 }
                                 
                                 .map span {
@@ -26,7 +32,7 @@
                                     display: block;
                                     color: #fff;
                                     position: absolute;
-                                    left: 228px;
+                                    left: 290px;
                                     top: 461px;
                                     font-size: 15px;
                                 }
@@ -39,7 +45,7 @@
                                     display: block;
                                     color: #fff;
                                     position: absolute;
-                                    left: 228px;
+                                    left: 270px;
                                     top: 40px;
                                     font-size: 15px;
                                 }
@@ -52,7 +58,7 @@
                                     display: block;
                                     color: #fff;
                                     position: absolute;
-                                    left: -40px;
+                                    left: 0px;
                                     top: 370px;
                                     font-size: 15px;
                                 }
@@ -65,7 +71,7 @@
                                     display: block;
                                     color: #fff;
                                     position: absolute;
-                                    left: -15px;
+                                    left: 25px;
                                     top: 450px;
                                     font-size: 15px;
                                 }
@@ -73,7 +79,7 @@
                                 .marker1 {
                                     position: absolute;
                                     top: 476px;
-                                    left: 205px;
+                                    left: 270px;
                                     width: 10px;
                                     height: 5px;
                                     animation-delay: 0.5s;
@@ -84,8 +90,8 @@
                                 
                                 .marker2 {
                                     position: absolute;
-                                    top: 194px;
-                                    left: 157px;
+                                    top: 185px;
+                                    left: 220px;
                                     width: 10px;
                                     height: 5px;
                                     animation-delay: 0.5s;
@@ -96,8 +102,8 @@
                                 
                                 .marker3 {
                                     position: absolute;
-                                    top: 286px;
-                                    left: 156.5px;
+                                    top: 289px;
+                                    left: 200.5px;
                                     width: 10px;
                                     height: 5px;
                                     animation-delay: 0.5s;
@@ -109,7 +115,7 @@
                                 .marker4 {
                                     position: absolute;
                                     top: 478px;
-                                    left: 186px;
+                                    left: 245px;
                                     width: 10px;
                                     height: 5px;
                                     animation-delay: 0.5s;
@@ -120,32 +126,32 @@
                                 
                                 .pin1 {
                                     position: absolute;
-                                    top: 422px;
-                                    left: 200px;
+                                    top: 454px;
+                                    left: 264px;
                                     width: 20px;
                                     height: 25px;
                                 }
                                 
                                 .pin2 {
                                     position: absolute;
-                                    top: 138px;
-                                    left: 152px;
+                                    top: 165px;
+                                    left: 215px;
                                     width: 20px;
                                     height: 25px
                                 }
                                 
                                 .pin3 {
                                     position: absolute;
-                                    top: 231px;
-                                    left: 151px;
+                                    top: 268px;
+                                    left: 195px;
                                     width: 20px;
                                     height: 25px
                                 }
                                 
                                 .pin4 {
                                     position: absolute;
-                                    top: 425px;
-                                    left: 180px;
+                                    top: 456px;
+                                    left: 240px;
                                     width: 20px;
                                     height: 25px;
                                 }
