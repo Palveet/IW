@@ -1,437 +1,809 @@
-                                    body {
-                                        background: url("/assets/bg.png");
-                                        background-size: contain;
-                                        padding-top: 91px;
+                                body {
+                                    background: url("/assets/bg.png");
+                                    background-size: contain;
+                                    padding-top: 91px;
+                                }
+                                
+                                .map img {
+                                    margin-top: 5%;
+                                }
+                                
+                                .map span {
+                                    animation: highlight 1.5s ease-in-out infinite;
+                                }
+                                
+                                @keyframes highlight {
+                                    100% {
+                                        transform: scale(2);
                                     }
-                                    
-                                    .map img {
-                                        margin-top: 5%;
+                                }
+                                
+                                .loc1 p {
+                                    display: none;
+                                }
+                                
+                                .pin1:hover+p {
+                                    display: block;
+                                    color: #fff;
+                                    position: absolute;
+                                    left: 228px;
+                                    top: 461px;
+                                    font-size: 15px;
+                                }
+                                
+                                .loc2 ul {
+                                    display: none;
+                                }
+                                
+                                .pin2:hover+ul {
+                                    display: block;
+                                    color: #fff;
+                                    position: absolute;
+                                    left: 228px;
+                                    top: 40px;
+                                    font-size: 15px;
+                                }
+                                
+                                .loc3 p {
+                                    display: none;
+                                }
+                                
+                                .pin3:hover+p {
+                                    display: block;
+                                    color: #fff;
+                                    position: absolute;
+                                    left: -40px;
+                                    top: 370px;
+                                    font-size: 15px;
+                                }
+                                
+                                .loc4 p {
+                                    display: none;
+                                }
+                                
+                                .pin4:hover+p {
+                                    display: block;
+                                    color: #fff;
+                                    position: absolute;
+                                    left: -15px;
+                                    top: 450px;
+                                    font-size: 15px;
+                                }
+                                
+                                .marker1 {
+                                    position: absolute;
+                                    top: 476px;
+                                    left: 205px;
+                                    width: 10px;
+                                    height: 5px;
+                                    animation-delay: 0.5s;
+                                    border-radius: 50%;
+                                    background: #109FDD;
+                                    opacity: 0.5;
+                                }
+                                
+                                .marker2 {
+                                    position: absolute;
+                                    top: 194px;
+                                    left: 157px;
+                                    width: 10px;
+                                    height: 5px;
+                                    animation-delay: 0.5s;
+                                    border-radius: 50%;
+                                    background: #109FDD;
+                                    opacity: 0.5;
+                                }
+                                
+                                .marker3 {
+                                    position: absolute;
+                                    top: 286px;
+                                    left: 156.5px;
+                                    width: 10px;
+                                    height: 5px;
+                                    animation-delay: 0.5s;
+                                    border-radius: 50%;
+                                    background: #109FDD;
+                                    opacity: 0.5;
+                                }
+                                
+                                .marker4 {
+                                    position: absolute;
+                                    top: 478px;
+                                    left: 186px;
+                                    width: 10px;
+                                    height: 5px;
+                                    animation-delay: 0.5s;
+                                    border-radius: 50%;
+                                    background: #109FDD;
+                                    opacity: 0.5;
+                                }
+                                
+                                .pin1 {
+                                    position: absolute;
+                                    top: 422px;
+                                    left: 200px;
+                                    width: 20px;
+                                    height: 25px;
+                                }
+                                
+                                .pin2 {
+                                    position: absolute;
+                                    top: 138px;
+                                    left: 152px;
+                                    width: 20px;
+                                    height: 25px
+                                }
+                                
+                                .pin3 {
+                                    position: absolute;
+                                    top: 231px;
+                                    left: 151px;
+                                    width: 20px;
+                                    height: 25px
+                                }
+                                
+                                .pin4 {
+                                    position: absolute;
+                                    top: 425px;
+                                    left: 180px;
+                                    width: 20px;
+                                    height: 25px;
+                                }
+                                
+                                .flip-card-inner {
+                                    position: relative;
+                                    text-align: center;
+                                    transition: transform 0.6s;
+                                    transform-style: preserve-3d;
+                                }
+                                
+                                .flip-card:hover .flip-card-inner {
+                                    transform: rotateY(180deg);
+                                }
+                                
+                                .flip-card-front,
+                                .flip-card-back {
+                                    position: absolute;
+                                    -webkit-backface-visibility: hidden;
+                                    backface-visibility: hidden;
+                                    width: inherit;
+                                    height: inherit;
+                                }
+                                
+                                .flip-card-back {
+                                    transform: rotateY(180deg);
+                                }
+                                
+                                .container {
+                                    margin: 0;
+                                }
+                                
+                                .intro {
+                                    background: url("/assets/intro_bg.png");
+                                    background-repeat-y: no-repeat;
+                                    background-size: cover;
+                                    width: 100vw;
+                                    height: 100vh;
+                                }
+                                
+                                h1 {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    font-size: 45px;
+                                    line-height: 55px;
+                                    color: #FFFFFF;
+                                }
+                                
+                                h4 {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 25px;
+                                    line-height: 30px;
+                                    font-variant: small-caps;
+                                    color: #FFFFFF;
+                                }
+                                
+                                .blue {
+                                    color: #109FDD;
+                                }
+                                
+                                .intro p {
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                    color: #FFFFFF
+                                }
+                                
+                                .know {
+                                    width: 102px;
+                                    height: 33px;
+                                    background: #109FDD;
+                                    border-radius: 7px;
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 10px;
+                                    line-height: 15px;
+                                    letter-spacing: 0.1em;
+                                    color: #FFFFFF;
+                                }
+                                
+                                .who-are-we {
+                                    width: 100vw;
+                                    height: 50vmax;
+                                }
+                                
+                                .who-are-we h1 {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 45px;
+                                    line-height: 55px;
+                                    color: #000000;
+                                }
+                                
+                                .who-are-we p {
+                                    text-align: justify;
+                                    font-size: 1em;
+                                }
+                                
+                                p span.blue {
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 1.8em;
+                                    line-height: 33px;
+                                    text-align: justify;
+                                }
+                                
+                                .who-are-we .btn {
+                                    width: 165px;
+                                    height: 33px;
+                                    background: #109FDD;
+                                    border-radius: 7px;
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 11px;
+                                    line-height: 15px;
+                                    color: #FFFFFF;
+                                }
+                                
+                                .space {
+                                    padding: 70px 50px;
+                                }
+                                
+                                .waw1 {
+                                    position: absolute;
+                                    /* left: 120px;*/
+                                    left: 18%;
+                                    top: 5%;
+                                    /*top: 18px;*/
+                                    width: 45%;
+                                    height: 40%;
+                                    /*width: 250px;
+            height: 200px;*/
+                                }
+                                
+                                .waw2 {
+                                    position: absolute;
+                                    /*left: 390px;*/
+                                    left: 65%;
+                                    top: 9%;
+                                    /* top: 47px;*/
+                                    width: 30%;
+                                    height: 34%;
+                                    /*width: 150px;
+            height: 170px;*/
+                                }
+                                
+                                .waw3 {
+                                    position: absolute;
+                                    /*top: 190px;*/
+                                    top: 40%;
+                                    /*left: 150px;*/
+                                    left: 30%;
+                                    /* width: 350px;
+            height: 170px;*/
+                                    width: 60%;
+                                    height: 35%;
+                                }
+                                
+                                .waw1-bg {
+                                    position: absolute;
+                                    /*left: 85px;*/
+                                    left: 12%;
+                                    top: 0%;
+                                    width: 45%;
+                                    height: 40%;
+                                    /*width: 250px;
+            height: 200px;*/
+                                    background: rgba(140, 185, 226, 0.42);
+                                }
+                                
+                                .waw3-bg {
+                                    position: absolute;
+                                    /*left: 230px;*/
+                                    left: 35%;
+                                    top: 45%;
+                                    width: 60%;
+                                    height: 35%;
+                                    background: rgba(140, 185, 226, 0.42);
+                                }
+                                
+                                .top-space {
+                                    margin-top: 65px;
+                                }
+                                
+                                .our-services {
+                                    background: url("/assets/our-services-bg.png");
+                                    background-size: cover;
+                                    width: 100vw;
+                                    height: 75vmax;
+                                    padding-top: 80px;
+                                }
+                                
+                                .our-services p {
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    text-align: justify;
+                                    color: #FFFFFF;
+                                }
+                                
+                                .card {
+                                    width: 227px;
+                                    height: 300px;
+                                    background: #FEFEFE;
+                                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                                    border-radius: 10px!important;
+                                    padding-top: 20px;
+                                }
+                                
+                                .card-img-top {
+                                    width: 97px;
+                                    height: 99px;
+                                    margin: 0 auto;
+                                }
+                                
+                                .card-text {
+                                    color: #000000!important;
+                                }
+                                
+                                .web-dev {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0%;
+                                    /* top: 280px;
+            left: 10px;*/
+                                }
+                                
+                                .app-dev {
+                                    position: absolute;
+                                    top: 35%;
+                                    left: 33%;
+                                    /*top: 220px;
+            left: 280px;*/
+                                }
+                                
+                                .bus-sol {
+                                    position: absolute;
+                                    top: 20%;
+                                    left: 65%;
+                                    /*top: 150px;
+            left: 550px;*/
+                                }
+                                
+                                .our-services-content {
+                                    margin-top: 135px;
+                                    padding-left: 45px;
+                                }
+                                
+                                .our-mentors {
+                                    background-size: cover;
+                                    width: 100vw;
+                                    height: 40vmax;
+                                    padding: 80px;
+                                    background-repeat: repeat-y;
+                                }
+                                
+                                .our-mentors h1 {
+                                    color: #000;
+                                }
+                                
+                                .our-mentors p {
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    text-align: center;
+                                    color: #000000;
+                                }
+                                
+                                .our-mentors .card {
+                                    width: 227px;
+                                    height: 275px;
+                                    background: #F7F9FA;
+                                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                                    border-radius: 10px;
+                                    margin: 90px auto;
+                                }
+                                
+                                .our-mentors .card-img-top {
+                                    border-radius: 50%!important;
+                                }
+                                
+                                .our-mentors .card-title {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    color: #0A587A;
+                                }
+                                
+                                .our-projects {
+                                    background: url("/assets/our-projects-bg.png");
+                                    background-size: cover;
+                                    width: 100vw;
+                                    height: 70vmax;
+                                    padding: 30% 0% 20%;
+                                }
+                                
+                                .our-projects p {
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    text-align: center;
+                                    color: #FFFFFF;
+                                }
+                                
+                                .our-projects .card {
+                                    width: 200px!important;
+                                    height: 230px!important;
+                                    background: #F7F9FA;
+                                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                                    border-radius: 10px;
+                                    margin: 5% auto!important;
+                                    padding: 1% 0%;
+                                }
+                                
+                                .our-projects .card-title {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    text-align: center;
+                                    letter-spacing: 0.1em;
+                                    color: #000000;
+                                }
+                                
+                                .our-projects .card-img-top {
+                                    margin: 10% auto;
+                                }
+                                
+                                .srmpedia,
+                                .grapido,
+                                .swiftcare {
+                                    width: 125px;
+                                    height: 125px;
+                                }
+                                
+                                .our-projects .card-title {
+                                    width: 160px;
+                                }
+                                
+                                .join-our-community {
+                                    background: url("/assets/bg.png");
+                                    background-size: cover;
+                                    width: 100vw;
+                                    height: 50vmax;
+                                    padding: 100px 0px 100px 100px;
+                                    position: relative;
+                                }
+                                
+                                .overlay {
+                                    background: #FFFFFF;
+                                    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+                                    border-top-left-radius: 40px;
+                                    border-bottom-left-radius: 40px;
+                                    position: absolute;
+                                    top: -40px;
+                                    right: 0;
+                                    height: 40vmax;
+                                    width: 85vw;
+                                }
+                                
+                                .join-grapido img {
+                                    position: absolute;
+                                    width: 350px;
+                                    height: 400px;
+                                    top: -70px;
+                                    right: 0;
+                                }
+                                
+                                .content {
+                                    position: absolute;
+                                    top: 2%;
+                                    right: 25%;
+                                }
+                                
+                                .content-1 {
+                                    position: absolute;
+                                    left: 20%;
+                                }
+                                
+                                .content-1 h4,
+                                .content h4 {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 25px;
+                                    line-height: 30px;
+                                    letter-spacing: 0.1em;
+                                    color: #000000;
+                                }
+                                
+                                .content-1 p {
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 17px;
+                                    line-height: 21px;
+                                    text-align: justify;
+                                    color: rgba(0, 0, 0, 0.72);
+                                    padding-right: 40px;
+                                }
+                                
+                                .content-1 .btn {
+                                    width: 165px;
+                                    height: 33px;
+                                    background: #109FDD;
+                                    border-radius: 7px;
+                                }
+                                
+                                .google-play {
+                                    position: relative;
+                                    width: 165px;
+                                }
+                                
+                                .google-play img {
+                                    position: absolute;
+                                    top: -14px;
+                                    left: -40px;
+                                    width: 200px;
+                                }
+                                
+                                @media (min-width:1000px) {
+                                    .owl-carousel {
+                                        display: none!important;
                                     }
-                                    
-                                    .pin1 {
-                                        position: absolute;
-                                        top: 422px;
-                                        left: 200px;
-                                        width: 20px;
-                                        height: 25px;
-                                    }
-                                    
-                                    .pin2 {
-                                        position: absolute;
-                                        top: 142px;
-                                        left: 152px;
-                                        width: 20px;
-                                        height: 25px
-                                    }
-                                    
-                                    .pin3 {
-                                        position: absolute;
-                                        top: 231px;
-                                        left: 151px;
-                                        width: 20px;
-                                        height: 25px
-                                    }
-                                    
-                                    .pin4 {
-                                        position: absolute;
-                                        top: 425px;
-                                        left: 180px;
-                                        width: 20px;
-                                        height: 25px;
-                                    }
-                                    
-                                    .flip-card-inner {
-                                        position: relative;
-                                        text-align: center;
-                                        transition: transform 0.6s;
-                                        transform-style: preserve-3d;
-                                    }
-                                    
-                                    .flip-card:hover .flip-card-inner {
-                                        transform: rotateY(180deg);
-                                    }
-                                    
-                                    .flip-card-front,
-                                    .flip-card-back {
-                                        position: absolute;
-                                        -webkit-backface-visibility: hidden;
-                                        backface-visibility: hidden;
-                                        width: inherit;
-                                        height: inherit;
-                                    }
-                                    
-                                    .flip-card-back {
-                                        transform: rotateY(180deg);
-                                    }
-                                    
-                                    .container {
-                                        margin: 0;
-                                    }
-                                    
-                                    .intro {
-                                        background: url("/assets/intro_bg.png");
-                                        background-repeat-y: no-repeat;
-                                        background-size: cover;
-                                        width: 100vw;
-                                        height: 100vh;
-                                    }
-                                    
-                                    h1 {
-                                        font-family: 'Montserrat', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 800;
-                                        font-size: 45px;
-                                        line-height: 55px;
-                                        color: #FFFFFF;
-                                    }
-                                    
-                                    h4 {
-                                        font-family: 'Montserrat', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 600;
-                                        font-size: 25px;
-                                        line-height: 30px;
-                                        font-variant: small-caps;
-                                        color: #FFFFFF;
-                                    }
-                                    
-                                    .blue {
-                                        color: #109FDD;
-                                    }
-                                    
-                                    .intro p {
-                                        font-family: 'Quicksand', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 10px;
-                                        line-height: 12px;
-                                        color: #FFFFFF
-                                    }
-                                    
-                                    .know {
-                                        width: 102px;
-                                        height: 33px;
-                                        background: #109FDD;
-                                        border-radius: 7px;
-                                        font-family: 'Quicksand', sans-serif;
-                                        font-style: normal;
-                                        font-weight: bold;
-                                        font-size: 10px;
-                                        line-height: 15px;
-                                        letter-spacing: 0.1em;
-                                        color: #FFFFFF;
-                                    }
-                                    
-                                    .who-are-we {
-                                        width: 100vw;
-                                        height: 50vmax;
-                                    }
-                                    
-                                    .who-are-we h1 {
-                                        font-family: 'Montserrat', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 600;
-                                        font-size: 45px;
-                                        line-height: 55px;
-                                        color: #000000;
-                                    }
-                                    
-                                    .who-are-we p {
-                                        text-align: justify;
-                                        font-size: 1em;
-                                    }
-                                    
-                                    p span.blue {
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 1.8em;
-                                        line-height: 33px;
-                                        text-align: justify;
-                                    }
-                                    
-                                    .who-are-we .btn {
-                                        width: 165px;
-                                        height: 33px;
-                                        background: #109FDD;
-                                        border-radius: 7px;
-                                        font-family: 'Quicksand', sans-serif;
-                                        font-style: normal;
-                                        font-weight: bold;
-                                        font-size: 11px;
-                                        line-height: 15px;
-                                        color: #FFFFFF;
-                                    }
-                                    
+                                }
+                                
+                                @media (max-width: 1023.98px) {
                                     .space {
-                                        padding: 70px 50px;
+                                        padding: 70px 0px;
                                     }
-                                    
                                     .waw1 {
                                         position: absolute;
-                                        /* left: 120px;*/
-                                        left: 18%;
-                                        top: 5%;
-                                        /*top: 18px;*/
-                                        width: 45%;
-                                        height: 40%;
-                                        /*width: 250px;
-            height: 200px;*/
+                                        left: 130px;
+                                        top: 14%;
+                                        width: 13em;
+                                        height: 11em;
                                     }
-                                    
                                     .waw2 {
                                         position: absolute;
-                                        /*left: 390px;*/
-                                        left: 65%;
-                                        top: 9%;
-                                        /* top: 47px;*/
-                                        width: 30%;
-                                        height: 34%;
-                                        /*width: 150px;
-            height: 170px;*/
+                                        left: 370px;
+                                        top: 19%;
+                                        width: 7em;
+                                        height: 7em;
                                     }
-                                    
                                     .waw3 {
                                         position: absolute;
-                                        /*top: 190px;*/
-                                        top: 40%;
-                                        /*left: 150px;*/
-                                        left: 30%;
-                                        /* width: 350px;
-            height: 170px;*/
-                                        width: 60%;
-                                        height: 35%;
+                                        top: 33%;
+                                        left: 175px;
+                                        width: 18em;
+                                        height: 9em;
                                     }
-                                    
+                                    .who-are-we {
+                                        height: 80vmax;
+                                    }
                                     .waw1-bg {
                                         position: absolute;
-                                        /*left: 85px;*/
-                                        left: 12%;
-                                        top: 0%;
-                                        width: 45%;
-                                        height: 40%;
-                                        /*width: 250px;
-            height: 200px;*/
+                                        left: 90px;
+                                        top: 11%;
+                                        width: 13em;
+                                        height: 11em;
                                         background: rgba(140, 185, 226, 0.42);
                                     }
-                                    
                                     .waw3-bg {
                                         position: absolute;
-                                        /*left: 230px;*/
-                                        left: 35%;
-                                        top: 45%;
-                                        width: 60%;
-                                        height: 35%;
+                                        left: 40%;
+                                        top: 40%;
+                                        width: 18em;
+                                        height: 9em;
                                         background: rgba(140, 185, 226, 0.42);
                                     }
-                                    
-                                    .top-space {
-                                        margin-top: 65px;
+                                    .who-are-we p {
+                                        font-size: 1em;
+                                        padding: 20px;
                                     }
-                                    
+                                    h1 {
+                                        font-size: 2em;
+                                    }
                                     .our-services {
-                                        background: url("/assets/our-services-bg.png");
-                                        background-size: cover;
-                                        width: 100vw;
-                                        height: 75vmax;
-                                        padding-top: 80px;
+                                        height: 100vmax;
                                     }
-                                    
-                                    .our-services p {
-                                        font-family: 'Quicksand', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 12px;
-                                        line-height: 15px;
-                                        text-align: justify;
-                                        color: #FFFFFF;
-                                    }
-                                    
-                                    .card {
-                                        width: 227px;
-                                        height: 300px;
-                                        background: #FEFEFE;
-                                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-                                        border-radius: 10px!important;
-                                        padding-top: 20px;
-                                    }
-                                    
-                                    .card-img-top {
-                                        width: 97px;
-                                        height: 99px;
-                                        margin: 0 auto;
-                                    }
-                                    
-                                    .card-text {
-                                        color: #000000!important;
-                                    }
-                                    
-                                    .web-dev {
-                                        position: absolute;
-                                        top: 50%;
-                                        left: 0%;
-                                        /* top: 280px;
-            left: 10px;*/
-                                    }
-                                    
-                                    .app-dev {
-                                        position: absolute;
-                                        top: 35%;
-                                        left: 33%;
-                                        /*top: 220px;
-            left: 280px;*/
-                                    }
-                                    
-                                    .bus-sol {
-                                        position: absolute;
-                                        top: 20%;
-                                        left: 65%;
-                                        /*top: 150px;
-            left: 550px;*/
-                                    }
-                                    
                                     .our-services-content {
-                                        margin-top: 135px;
-                                        padding-left: 45px;
+                                        padding-left: 20px;
                                     }
-                                    
-                                    .our-mentors {
-                                        background-size: cover;
-                                        width: 100vw;
-                                        height: 40vmax;
-                                        padding: 80px;
-                                        background-repeat: repeat-y;
-                                    }
-                                    
-                                    .our-mentors h1 {
-                                        color: #000;
-                                    }
-                                    
-                                    .our-mentors p {
-                                        font-family: 'Quicksand', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 12px;
-                                        line-height: 15px;
+                                    .our-services p {
                                         text-align: center;
-                                        color: #000000;
                                     }
-                                    
+                                    .web-dev {
+                                        left: -5%;
+                                        top: 45%;
+                                    }
+                                    .app-dev {
+                                        left: 30%;
+                                        top: 30%;
+                                    }
+                                    .bus-sol {
+                                        left: 65%;
+                                        top: 15%;
+                                    }
                                     .our-mentors .card {
-                                        width: 227px;
-                                        height: 275px;
-                                        background: #F7F9FA;
-                                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-                                        border-radius: 10px;
-                                        margin: 90px auto;
+                                        margin: 90px 45px;
                                     }
-                                    
-                                    .our-mentors .card-img-top {
-                                        border-radius: 50%!important;
-                                    }
-                                    
-                                    .our-mentors .card-title {
-                                        font-family: 'Montserrat', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 20px;
-                                        line-height: 24px;
-                                        color: #0A587A;
-                                    }
-                                    
-                                    .our-projects {
-                                        background: url("/assets/our-projects-bg.png");
-                                        background-size: cover;
-                                        width: 100vw;
-                                        height: 70vmax;
-                                        padding: 30% 0% 20%;
-                                    }
-                                    
-                                    .our-projects p {
-                                        font-family: 'Quicksand', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 12px;
-                                        line-height: 15px;
-                                        text-align: center;
-                                        color: #FFFFFF;
-                                    }
-                                    
                                     .our-projects .card {
-                                        width: 200px!important;
-                                        height: 230px!important;
-                                        background: #F7F9FA;
-                                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-                                        border-radius: 10px;
-                                        margin: 5% auto!important;
-                                        padding: 1% 0%;
+                                        margin: 30px 45px;
                                     }
-                                    
-                                    .our-projects .card-title {
-                                        font-family: 'Montserrat', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 15px;
-                                        line-height: 18px;
-                                        text-align: center;
-                                        letter-spacing: 0.1em;
-                                        color: #000000;
+                                    .our-projects {
+                                        padding: 220px 100px;
                                     }
-                                    
-                                    .our-projects .card-img-top {
-                                        margin: 10% auto;
+                                    .our-services-content {
+                                        margin-top: 15%;
                                     }
-                                    
-                                    .srmpedia,
-                                    .grapido,
-                                    .swiftcare {
-                                        width: 125px;
-                                        height: 125px;
+                                    .our-mentors {
+                                        height: 90%;
                                     }
-                                    
-                                    .our-projects .card-title {
-                                        width: 160px;
+                                    .our-projects {
+                                        height: 90vmax;
                                     }
-                                    
-                                    .join-our-community {
-                                        background: url("/assets/bg.png");
-                                        background-size: cover;
-                                        width: 100vw;
-                                        height: 50vmax;
-                                        padding: 100px 0px 100px 100px;
-                                        position: relative;
-                                    }
-                                    
                                     .overlay {
-                                        background: #FFFFFF;
-                                        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
-                                        border-top-left-radius: 40px;
-                                        border-bottom-left-radius: 40px;
-                                        position: absolute;
-                                        top: -40px;
-                                        right: 0;
-                                        height: 40vmax;
-                                        width: 85vw;
+                                        height: 50vmax;
                                     }
-                                    
+                                    .join-our-community {
+                                        height: 100vmax;
+                                    }
+                                }
+                                
+                                @media (max-width: 991.98px) {
+                                    .card {
+                                        width: 100%;
+                                    }
+                                    .top-space {
+                                        margin-top: 385px;
+                                    }
+                                    .hide-on-tab {
+                                        display: none;
+                                    }
+                                    .waw1 {
+                                        position: absolute;
+                                        left: 130px;
+                                        top: 100%;
+                                        width: 13em;
+                                        height: 11em;
+                                    }
+                                    .waw2 {
+                                        position: absolute;
+                                        left: 370px;
+                                        top: 58px;
+                                        width: 7em;
+                                        height: 7em;
+                                    }
+                                    .waw3 {
+                                        position: absolute;
+                                        top: 150px;
+                                        left: 175px;
+                                        width: 18em;
+                                        height: 9em;
+                                    }
+                                    .waw1-bg {
+                                        position: absolute;
+                                        left: 90px;
+                                        top: -30px;
+                                        width: 13em;
+                                        height: 11em;
+                                        background: rgba(140, 185, 226, 0.42);
+                                    }
+                                    .waw3-bg {
+                                        position: absolute;
+                                        left: 200px;
+                                        top: 190px;
+                                        width: 18em;
+                                        height: 9em;
+                                        background: rgba(140, 185, 226, 0.42);
+                                    }
+                                    .owl-carousel .owl-nav button.owl-next,
+                                    .owl-carousel .owl-nav button.owl-prev,
+                                    .owl-carousel button.owl-dot {
+                                        font-size: 30px;
+                                        color: white;
+                                    }
+                                    .our-mentors .owl-carousel .owl-nav button.owl-next,
+                                    .our-mentors .owl-carousel .owl-nav button.owl-prev,
+                                    .our-mentors .owl-carousel button.owl-dot {
+                                        font-size: 30px;
+                                        color: #109FDD!important;
+                                    }
+                                    .owl-carousel {
+                                        padding: 0% 10%;
+                                    }
+                                    .card-img-top {
+                                        width: 70px!important;
+                                        height: 60px;
+                                    }
+                                    .our-mentors {
+                                        height: 100%;
+                                        padding: 80px 0;
+                                    }
+                                    .our-projects {
+                                        height: 100%;
+                                        padding: 200px 30px 100px;
+                                    }
+                                    .our-mentors .card,
+                                    .our-projects .card {
+                                        width: 100%;
+                                        height: 250px;
+                                    }
+                                    .our-mentors .card {
+                                        margin: 90px 0px;
+                                    }
+                                    .mentor-social img {
+                                        display: inline!important;
+                                        width: 30px!important;
+                                        height: 30px;
+                                    }
+                                    .our-projects .card {
+                                        margin: 20px 0!important;
+                                        height: 200px;
+                                    }
+                                    .grapido {
+                                        margin-top: 5px;
+                                    }
+                                    .our-mentors .card-title,
+                                    .our-projects .card-title {
+                                        font-size: 13px;
+                                    }
+                                    .overlay {
+                                        height: 100%;
+                                    }
                                     .join-grapido img {
                                         position: absolute;
-                                        width: 350px;
-                                        height: 400px;
+                                        width: 300px;
+                                        height: 350px;
                                         top: -70px;
                                         right: 0;
                                     }
-                                    
                                     .content {
                                         position: absolute;
-                                        top: 2%;
-                                        right: 25%;
+                                        top: 20px;
+                                        left: 60px;
                                     }
-                                    
                                     .content-1 {
                                         position: absolute;
-                                        left: 20%;
+                                        left: 60px;
                                     }
-                                    
                                     .content-1 h4,
                                     .content h4 {
                                         font-family: 'Montserrat', sans-serif;
@@ -442,522 +814,260 @@
                                         letter-spacing: 0.1em;
                                         color: #000000;
                                     }
-                                    
                                     .content-1 p {
-                                        font-family: 'Quicksand', sans-serif;
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 17px;
-                                        line-height: 21px;
-                                        text-align: justify;
-                                        color: rgba(0, 0, 0, 0.72);
-                                        padding-right: 40px;
+                                        font-size: 12px;
+                                        line-height: 12px;
+                                        padding-right: 20px;
                                     }
-                                    
                                     .content-1 .btn {
                                         width: 165px;
                                         height: 33px;
                                         background: #109FDD;
                                         border-radius: 7px;
                                     }
-                                    
                                     .google-play {
                                         position: relative;
                                         width: 165px;
                                     }
-                                    
                                     .google-play img {
                                         position: absolute;
                                         top: -14px;
                                         left: -40px;
                                         width: 200px;
                                     }
-                                    
-                                    @media (min-width:1000px) {
-                                        .owl-carousel {
-                                            display: none!important;
-                                        }
+                                    h1 {
+                                        font-size: 35px;
                                     }
-                                    
-                                    @media (max-width: 1023.98px) {
-                                        .space {
-                                            padding: 70px 0px;
-                                        }
-                                        .waw1 {
-                                            position: absolute;
-                                            left: 130px;
-                                            top: 14%;
-                                            width: 13em;
-                                            height: 11em;
-                                        }
-                                        .waw2 {
-                                            position: absolute;
-                                            left: 370px;
-                                            top: 19%;
-                                            width: 7em;
-                                            height: 7em;
-                                        }
-                                        .waw3 {
-                                            position: absolute;
-                                            top: 33%;
-                                            left: 175px;
-                                            width: 18em;
-                                            height: 9em;
-                                        }
-                                        .who-are-we {
-                                            height: 80vmax;
-                                        }
-                                        .waw1-bg {
-                                            position: absolute;
-                                            left: 90px;
-                                            top: 11%;
-                                            width: 13em;
-                                            height: 11em;
-                                            background: rgba(140, 185, 226, 0.42);
-                                        }
-                                        .waw3-bg {
-                                            position: absolute;
-                                            left: 40%;
-                                            top: 40%;
-                                            width: 18em;
-                                            height: 9em;
-                                            background: rgba(140, 185, 226, 0.42);
-                                        }
-                                        .who-are-we p {
-                                            font-size: 1em;
-                                            padding: 20px;
-                                        }
-                                        h1 {
-                                            font-size: 2em;
-                                        }
-                                        .our-services {
-                                            height: 100vmax;
-                                        }
-                                        .our-services-content {
-                                            padding-left: 20px;
-                                        }
-                                        .our-services p {
-                                            text-align: center;
-                                        }
-                                        .web-dev {
-                                            left: -5%;
-                                            top: 45%;
-                                        }
-                                        .app-dev {
-                                            left: 30%;
-                                            top: 30%;
-                                        }
-                                        .bus-sol {
-                                            left: 65%;
-                                            top: 15%;
-                                        }
-                                        .our-mentors .card {
-                                            margin: 90px 45px;
-                                        }
-                                        .our-projects .card {
-                                            margin: 30px 45px;
-                                        }
-                                        .our-projects {
-                                            padding: 220px 100px;
-                                        }
-                                        .our-services-content {
-                                            margin-top: 15%;
-                                        }
-                                        .our-mentors {
-                                            height: 90%;
-                                        }
-                                        .our-projects {
-                                            height: 90vmax;
-                                        }
-                                        .overlay {
-                                            height: 50vmax;
-                                        }
-                                        .join-our-community {
-                                            height: 100vmax;
-                                        }
+                                    .space-mob {
+                                        position: absolute;
+                                        left: 10%;
                                     }
-                                    
-                                    @media (max-width: 991.98px) {
-                                        .card {
-                                            width: 100%;
-                                        }
-                                        .top-space {
-                                            margin-top: 385px;
-                                        }
-                                        .hide-on-tab {
-                                            display: none;
-                                        }
-                                        .waw1 {
-                                            position: absolute;
-                                            left: 130px;
-                                            top: 100%;
-                                            width: 13em;
-                                            height: 11em;
-                                        }
-                                        .waw2 {
-                                            position: absolute;
-                                            left: 370px;
-                                            top: 58px;
-                                            width: 7em;
-                                            height: 7em;
-                                        }
-                                        .waw3 {
-                                            position: absolute;
-                                            top: 150px;
-                                            left: 175px;
-                                            width: 18em;
-                                            height: 9em;
-                                        }
-                                        .waw1-bg {
-                                            position: absolute;
-                                            left: 90px;
-                                            top: -30px;
-                                            width: 13em;
-                                            height: 11em;
-                                            background: rgba(140, 185, 226, 0.42);
-                                        }
-                                        .waw3-bg {
-                                            position: absolute;
-                                            left: 200px;
-                                            top: 190px;
-                                            width: 18em;
-                                            height: 9em;
-                                            background: rgba(140, 185, 226, 0.42);
-                                        }
-                                        .owl-carousel .owl-nav button.owl-next,
-                                        .owl-carousel .owl-nav button.owl-prev,
-                                        .owl-carousel button.owl-dot {
-                                            font-size: 30px;
-                                            color: white;
-                                        }
-                                        .our-mentors .owl-carousel .owl-nav button.owl-next,
-                                        .our-mentors .owl-carousel .owl-nav button.owl-prev,
-                                        .our-mentors .owl-carousel button.owl-dot {
-                                            font-size: 30px;
-                                            color: #109FDD!important;
-                                        }
-                                        .owl-carousel {
-                                            padding: 0% 10%;
-                                        }
-                                        .card-img-top {
-                                            width: 70px!important;
-                                            height: 60px;
-                                        }
-                                        .our-mentors {
-                                            height: 100%;
-                                            padding: 80px 0;
-                                        }
-                                        .our-projects {
-                                            height: 100%;
-                                            padding: 200px 30px 100px;
-                                        }
-                                        .our-mentors .card,
-                                        .our-projects .card {
-                                            width: 100%;
-                                            height: 250px;
-                                        }
-                                        .our-mentors .card {
-                                            margin: 90px 0px;
-                                        }
-                                        .mentor-social img {
-                                            display: inline!important;
-                                            width: 30px!important;
-                                            height: 30px;
-                                        }
-                                        .our-projects .card {
-                                            margin: 20px 0!important;
-                                            height: 200px;
-                                        }
-                                        .grapido {
-                                            margin-top: 5px;
-                                        }
-                                        .our-mentors .card-title,
-                                        .our-projects .card-title {
-                                            font-size: 13px;
-                                        }
-                                        .overlay {
-                                            height: 100%;
-                                        }
-                                        .join-grapido img {
-                                            position: absolute;
-                                            width: 300px;
-                                            height: 350px;
-                                            top: -70px;
-                                            right: 0;
-                                        }
-                                        .content {
-                                            position: absolute;
-                                            top: 20px;
-                                            left: 60px;
-                                        }
-                                        .content-1 {
-                                            position: absolute;
-                                            left: 60px;
-                                        }
-                                        .content-1 h4,
-                                        .content h4 {
-                                            font-family: 'Montserrat', sans-serif;
-                                            font-style: normal;
-                                            font-weight: 600;
-                                            font-size: 25px;
-                                            line-height: 30px;
-                                            letter-spacing: 0.1em;
-                                            color: #000000;
-                                        }
-                                        .content-1 p {
-                                            font-size: 12px;
-                                            line-height: 12px;
-                                            padding-right: 20px;
-                                        }
-                                        .content-1 .btn {
-                                            width: 165px;
-                                            height: 33px;
-                                            background: #109FDD;
-                                            border-radius: 7px;
-                                        }
-                                        .google-play {
-                                            position: relative;
-                                            width: 165px;
-                                        }
-                                        .google-play img {
-                                            position: absolute;
-                                            top: -14px;
-                                            left: -40px;
-                                            width: 200px;
-                                        }
-                                        h1 {
-                                            font-size: 35px;
-                                        }
-                                        .space-mob {
-                                            position: absolute;
-                                            left: 10%;
-                                        }
+                                }
+                                
+                                @media (max-width: 575.98px) {
+                                    .owl-carousel {
+                                        padding: 0% 21%!important;
                                     }
-                                    
-                                    @media (max-width: 575.98px) {
-                                        .owl-carousel {
-                                            padding: 0% 21%!important;
-                                        }
-                                        .pictures {
-                                            padding-left: 20%;
-                                        }
-                                        .card {
-                                            width: 100%;
-                                        }
-                                        .who-are-we {
-                                            height: 100vmax;
-                                        }
-                                        .waw1 {
-                                            position: absolute;
-                                            left: 0;
-                                            top: 18px;
-                                            width: 10em;
-                                            height: 8em;
-                                        }
-                                        .waw2 {
-                                            position: absolute;
-                                            left: 170px;
-                                            top: 47px;
-                                            width: 6em;
-                                            height: 7em;
-                                        }
-                                        .waw3 {
-                                            position: absolute;
-                                            top: 140px;
-                                            left: 12px;
-                                            width: 14em;
-                                            height: 7em;
-                                        }
-                                        .waw1-bg {
-                                            position: absolute;
-                                            left: -20px;
-                                            top: -10px;
-                                            width: 10em;
-                                            height: 8em;
-                                            background: rgba(140, 185, 226, 0.42);
-                                        }
-                                        .waw3-bg {
-                                            position: absolute;
-                                            left: 30px;
-                                            top: 180px;
-                                            width: 14em;
-                                            height: 7em;
-                                            background: rgba(140, 185, 226, 0.42);
-                                        }
-                                        .who-are-we h1 {
-                                            font-size: 28px;
-                                            line-height: 30px;
-                                        }
-                                        .space {
-                                            padding: 45px 20px;
-                                        }
-                                        .top-space {
-                                            margin-top: 325px;
-                                        }
-                                        p span.blue {
-                                            font-size: 20px;
-                                            line-height: 30px;
-                                        }
-                                        .who-are-we p {
-                                            text-align: justify;
-                                            font-size: 0.6em;
-                                            line-height: 1em;
-                                            margin: 0px;
-                                        }
-                                        .our-services {
-                                            padding-top: 40px;
-                                        }
-                                        .our-services-content {
-                                            margin-top: 135px;
-                                            padding: 0px 60px;
-                                        }
-                                        .our-mentors {
-                                            height: 70vmax;
-                                        }
-                                        .our-mentors p {
-                                            padding: 0px 25px;
-                                            text-align: justify;
-                                        }
-                                        .our-mentors .card {
-                                            width: 75%;
-                                            margin: 0 auto;
-                                        }
-                                        .our-projects {
-                                            height: 100vmax;
-                                            padding: 125px 45px 100px;
-                                        }
-                                        .our-projects .card {
-                                            width: 100%;
-                                            margin: 0!important;
-                                        }
-                                        .our-projects .card-title {
-                                            font-size: 11px;
-                                        }
-                                        .join-our-community {
-                                            padding: 15px 0px 75px 75px;
-                                            height: 100vh;
-                                        }
-                                        .join-grapido img {
-                                            position: absolute;
-                                            width: 60%;
-                                            height: 80%;
-                                            top: 25%;
-                                            right: 0;
-                                        }
-                                        h1 {
-                                            font-size: 1.2em;
-                                            line-height: 1em;
-                                        }
-                                        .content-1 h4,
-                                        .content h4 {
-                                            font-family: 'Montserrat', sans-serif;
-                                            font-style: normal;
-                                            font-weight: 600;
-                                            font-size: 1.1em;
-                                            line-height: 1.1em;
-                                            letter-spacing: 0.1em;
-                                            color: #000000;
-                                        }
-                                        .content-1 p {
-                                            font-size: 0.8em;
-                                            line-height: 0.9em;
-                                            padding-right: 20px;
-                                        }
-                                        .content {
-                                            position: absolute;
-                                            top: 30%;
-                                        }
-                                        .content-1 {
-                                            top: 10%;
-                                        }
-                                        .our-services {
-                                            height: 100vmax;
-                                        }
-                                        .content-1 .btn {
-                                            width: 100px;
-                                            height: 25px;
-                                            background: #109FDD;
-                                            border-radius: 2px;
-                                            font-size: 0.2em;
-                                        }
-                                        .google-play {
-                                            position: relative;
-                                            width: 110px;
-                                        }
-                                        .google-play img {
-                                            position: absolute;
-                                            top: -7px;
-                                            left: -40px;
-                                            width: 150px;
-                                        }
-                                        .space-mob {
-                                            position: absolute;
-                                            left: 15%;
-                                        }
-                                        .who-are-we .btn {
-                                            width: 130px;
-                                            height: 25px;
-                                            background: #109FDD;
-                                            border-radius: 7px;
-                                            font-family: 'Quicksand', sans-serif;
-                                            font-style: normal;
-                                            font-weight: bold;
-                                            font-size: 0.5em;
-                                            line-height: 10px;
-                                            color: #FFFFFF;
-                                        }
+                                    .pictures {
+                                        padding-left: 20%;
                                     }
-                                    
-                                    @media(max-width:365px) {
-                                        .who-are-we {
-                                            height: 120vmax;
-                                        }
-                                        .our-services {
-                                            height: 130vmax;
-                                            padding-top: 0px;
-                                        }
-                                        .our-services-content {
-                                            padding: 0px 40px;
-                                        }
-                                        .our-mentors {
-                                            height: 90vmax;
-                                        }
-                                        .our-projects {
-                                            height: 110vmax;
-                                        }
-                                        .our-projects p {
-                                            text-align: justify;
-                                        }
-                                        .waw1-bg {
-                                            position: absolute;
-                                            left: -35px;
-                                            top: -10px;
-                                            width: 10em;
-                                            height: 8em;
-                                            background: rgba(140, 185, 226, 0.42);
-                                        }
-                                        .space-mob {
-                                            position: absolute;
-                                            left: 12%;
-                                        }
-                                        .waw2 {
-                                            position: absolute;
-                                            left: 160px;
-                                            top: 47px;
-                                            width: 6em;
-                                            height: 7em;
-                                        }
+                                    .card {
+                                        width: 100%;
                                     }
-                                    
-                                    @media(min-width:1000px) and (max-width:1090px) {
-                                        .web-dev {
-                                            position: absolute;
-                                            top: 50%;
-                                            left: -15%;
-                                        }
-                                        .app-dev {
-                                            position: absolute;
-                                            top: 35%;
-                                            left: 25%;
-                                        }
+                                    .who-are-we {
+                                        height: 100vmax;
                                     }
+                                    .waw1 {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 18px;
+                                        width: 10em;
+                                        height: 8em;
+                                    }
+                                    .waw2 {
+                                        position: absolute;
+                                        left: 170px;
+                                        top: 47px;
+                                        width: 6em;
+                                        height: 7em;
+                                    }
+                                    .waw3 {
+                                        position: absolute;
+                                        top: 140px;
+                                        left: 12px;
+                                        width: 14em;
+                                        height: 7em;
+                                    }
+                                    .waw1-bg {
+                                        position: absolute;
+                                        left: -20px;
+                                        top: -10px;
+                                        width: 10em;
+                                        height: 8em;
+                                        background: rgba(140, 185, 226, 0.42);
+                                    }
+                                    .waw3-bg {
+                                        position: absolute;
+                                        left: 30px;
+                                        top: 180px;
+                                        width: 14em;
+                                        height: 7em;
+                                        background: rgba(140, 185, 226, 0.42);
+                                    }
+                                    .who-are-we h1 {
+                                        font-size: 28px;
+                                        line-height: 30px;
+                                    }
+                                    .space {
+                                        padding: 45px 20px;
+                                    }
+                                    .top-space {
+                                        margin-top: 325px;
+                                    }
+                                    p span.blue {
+                                        font-size: 20px;
+                                        line-height: 30px;
+                                    }
+                                    .who-are-we p {
+                                        text-align: justify;
+                                        font-size: 0.6em;
+                                        line-height: 1em;
+                                        margin: 0px;
+                                    }
+                                    .our-services {
+                                        padding-top: 40px;
+                                    }
+                                    .our-services-content {
+                                        margin-top: 135px;
+                                        padding: 0px 60px;
+                                    }
+                                    .our-mentors {
+                                        height: 70vmax;
+                                    }
+                                    .our-mentors p {
+                                        padding: 0px 25px;
+                                        text-align: justify;
+                                    }
+                                    .our-mentors .card {
+                                        width: 75%;
+                                        margin: 0 auto;
+                                    }
+                                    .our-projects {
+                                        height: 100vmax;
+                                        padding: 125px 45px 100px;
+                                    }
+                                    .our-projects .card {
+                                        width: 100%;
+                                        margin: 0!important;
+                                    }
+                                    .our-projects .card-title {
+                                        font-size: 11px;
+                                    }
+                                    .join-our-community {
+                                        padding: 15px 0px 75px 75px;
+                                        height: 100vh;
+                                    }
+                                    .join-grapido img {
+                                        position: absolute;
+                                        width: 60%;
+                                        height: 80%;
+                                        top: 25%;
+                                        right: 0;
+                                    }
+                                    h1 {
+                                        font-size: 1.2em;
+                                        line-height: 1em;
+                                    }
+                                    .content-1 h4,
+                                    .content h4 {
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 1.1em;
+                                        line-height: 1.1em;
+                                        letter-spacing: 0.1em;
+                                        color: #000000;
+                                    }
+                                    .content-1 p {
+                                        font-size: 0.8em;
+                                        line-height: 0.9em;
+                                        padding-right: 20px;
+                                    }
+                                    .content {
+                                        position: absolute;
+                                        top: 30%;
+                                    }
+                                    .content-1 {
+                                        top: 10%;
+                                    }
+                                    .our-services {
+                                        height: 100vmax;
+                                    }
+                                    .content-1 .btn {
+                                        width: 100px;
+                                        height: 25px;
+                                        background: #109FDD;
+                                        border-radius: 2px;
+                                        font-size: 0.2em;
+                                    }
+                                    .google-play {
+                                        position: relative;
+                                        width: 110px;
+                                    }
+                                    .google-play img {
+                                        position: absolute;
+                                        top: -7px;
+                                        left: -40px;
+                                        width: 150px;
+                                    }
+                                    .space-mob {
+                                        position: absolute;
+                                        left: 15%;
+                                    }
+                                    .who-are-we .btn {
+                                        width: 130px;
+                                        height: 25px;
+                                        background: #109FDD;
+                                        border-radius: 7px;
+                                        font-family: 'Quicksand', sans-serif;
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        font-size: 0.5em;
+                                        line-height: 10px;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                                
+                                @media(max-width:365px) {
+                                    .who-are-we {
+                                        height: 120vmax;
+                                    }
+                                    .our-services {
+                                        height: 130vmax;
+                                        padding-top: 0px;
+                                    }
+                                    .our-services-content {
+                                        padding: 0px 40px;
+                                    }
+                                    .our-mentors {
+                                        height: 90vmax;
+                                    }
+                                    .our-projects {
+                                        height: 110vmax;
+                                    }
+                                    .our-projects p {
+                                        text-align: justify;
+                                    }
+                                    .waw1-bg {
+                                        position: absolute;
+                                        left: -35px;
+                                        top: -10px;
+                                        width: 10em;
+                                        height: 8em;
+                                        background: rgba(140, 185, 226, 0.42);
+                                    }
+                                    .space-mob {
+                                        position: absolute;
+                                        left: 12%;
+                                    }
+                                    .waw2 {
+                                        position: absolute;
+                                        left: 160px;
+                                        top: 47px;
+                                        width: 6em;
+                                        height: 7em;
+                                    }
+                                }
+                                
+                                @media(min-width:1000px) and (max-width:1090px) {
+                                    .web-dev {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: -15%;
+                                    }
+                                    .app-dev {
+                                        position: absolute;
+                                        top: 35%;
+                                        left: 25%;
+                                    }
+                                }
