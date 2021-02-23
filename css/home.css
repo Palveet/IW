@@ -32,9 +32,9 @@
                                     display: block;
                                     color: #fff;
                                     position: absolute;
-                                    left: 290px;
-                                    top: 461px;
-                                    font-size: 15px;
+                                    left: 46%;
+                                    top: 76%;
+                                    font-size: 0.9em;
                                 }
                                 
                                 .loc2 ul {
@@ -45,9 +45,9 @@
                                     display: block;
                                     color: #fff;
                                     position: absolute;
-                                    left: 270px;
-                                    top: 40px;
-                                    font-size: 15px;
+                                    left: 45%;
+                                    top: 7%;
+                                    font-size: 0.9em;
                                 }
                                 
                                 .loc3 p {
@@ -58,9 +58,9 @@
                                     display: block;
                                     color: #fff;
                                     position: absolute;
-                                    left: 0px;
-                                    top: 370px;
-                                    font-size: 15px;
+                                    left: 0%;
+                                    top: 56%;
+                                    font-size: 0.9em;
                                 }
                                 
                                 .loc4 p {
@@ -71,17 +71,17 @@
                                     display: block;
                                     color: #fff;
                                     position: absolute;
-                                    left: 25px;
-                                    top: 450px;
-                                    font-size: 15px;
+                                    left: 3%;
+                                    top: 77%;
+                                    font-size: 0.9em;
                                 }
                                 
                                 .marker1 {
                                     position: absolute;
-                                    top: 476px;
-                                    left: 270px;
-                                    width: 10px;
-                                    height: 5px;
+                                    top: 78%;
+                                    left: 41%;
+                                    width: 4%;
+                                    height: 2%;
                                     animation-delay: 0.5s;
                                     border-radius: 50%;
                                     background: #109FDD;
@@ -90,10 +90,10 @@
                                 
                                 .marker2 {
                                     position: absolute;
-                                    top: 185px;
-                                    left: 220px;
-                                    width: 10px;
-                                    height: 5px;
+                                    top: 32%;
+                                    left: 33.5%;
+                                    width: 4%;
+                                    height: 2%;
                                     animation-delay: 0.5s;
                                     border-radius: 50%;
                                     background: #109FDD;
@@ -102,10 +102,10 @@
                                 
                                 .marker3 {
                                     position: absolute;
-                                    top: 289px;
-                                    left: 200.5px;
-                                    width: 10px;
-                                    height: 5px;
+                                    top: 49%;
+                                    left: 29.8%;
+                                    width: 4%;
+                                    height: 2%;
                                     animation-delay: 0.5s;
                                     border-radius: 50%;
                                     background: #109FDD;
@@ -114,10 +114,10 @@
                                 
                                 .marker4 {
                                     position: absolute;
-                                    top: 478px;
-                                    left: 245px;
-                                    width: 10px;
-                                    height: 5px;
+                                    top: 79%;
+                                    left: 36.5%;
+                                    width: 4%;
+                                    height: 2%;
                                     animation-delay: 0.5s;
                                     border-radius: 50%;
                                     background: #109FDD;
@@ -126,34 +126,34 @@
                                 
                                 .pin1 {
                                     position: absolute;
-                                    top: 454px;
-                                    left: 264px;
-                                    width: 20px;
-                                    height: 25px;
+                                    top: 75%;
+                                    left: 41.4%;
+                                    width: 3%;
+                                    height: 4%;
                                 }
                                 
                                 .pin2 {
                                     position: absolute;
-                                    top: 165px;
-                                    left: 215px;
-                                    width: 20px;
-                                    height: 25px
+                                    top: 29%;
+                                    left: 33.5%;
+                                    width: 3%;
+                                    height: 4%;
                                 }
                                 
                                 .pin3 {
                                     position: absolute;
-                                    top: 268px;
-                                    left: 195px;
-                                    width: 20px;
-                                    height: 25px
+                                    top: 46%;
+                                    left: 30%;
+                                    width: 3%;
+                                    height: 4%;
                                 }
                                 
                                 .pin4 {
                                     position: absolute;
-                                    top: 456px;
-                                    left: 240px;
-                                    width: 20px;
-                                    height: 25px;
+                                    top: 77%;
+                                    left: 37%;
+                                    width: 3%;
+                                    height: 4%;
                                 }
                                 
                                 .flip-card-inner {
@@ -236,6 +236,10 @@
                                     line-height: 15px;
                                     letter-spacing: 0.1em;
                                     color: #FFFFFF;
+                                }
+                                
+                                .know a {
+                                    color: #fff;
                                 }
                                 
                                 .who-are-we {
@@ -596,6 +600,9 @@
                                 }
                                 
                                 @media (max-width: 1023.98px) {
+                                    .intro {
+                                        height: 110vh;
+                                    }
                                     .space {
                                         padding: 70px 0px;
                                     }
