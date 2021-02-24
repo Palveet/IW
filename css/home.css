@@ -599,6 +599,68 @@
                                     }
                                 }
                                 
+                                @media (min-width:1024px) and (max-width:1090px) {
+                                    .map .ind {
+                                        margin-top: 60%;
+                                        width: 80%;
+                                        height: 50%;
+                                    }
+                                    .pin1 {
+                                        position: absolute;
+                                        top: 61%;
+                                        left: 41.4%;
+                                        width: 3%;
+                                        height: 2%;
+                                    }
+                                    .marker1 {
+                                        position: absolute;
+                                        top: 62%;
+                                        left: 41%;
+                                        width: 4%;
+                                        height: 1%;
+                                    }
+                                    .pin2 {
+                                        position: absolute;
+                                        top: 35%;
+                                        left: 34%;
+                                        width: 3%;
+                                        height: 2%;
+                                    }
+                                    .marker2 {
+                                        position: absolute;
+                                        top: 36%;
+                                        height: 1%;
+                                    }
+                                    .pin3 {
+                                        position: absolute;
+                                        top: 44%;
+                                        left: 31%;
+                                        width: 3%;
+                                        height: 2%;
+                                    }
+                                    .marker3 {
+                                        position: absolute;
+                                        top: 45%;
+                                        left: 30.6%;
+                                        width: 4%;
+                                        height: 1%
+                                    }
+                                    .pin4 {
+                                        position: absolute;
+                                        top: 61%;
+                                        left: 37%;
+                                        width: 3%;
+                                        height: 2%;
+                                    }
+                                    .marker4 {
+                                        position: absolute;
+                                        top: 62%;
+                                        left: 36.5%;
+                                        width: 4%;
+                                        height: 1%;
+                                    }
+                                }
+                                
                                 @media (max-width: 1023.98px) {
                                     .intro {
                                         height: 110vh;
