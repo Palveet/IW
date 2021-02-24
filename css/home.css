@@ -659,6 +659,23 @@
                                         width: 4%;
                                         height: 1%;
                                     }
+                                    .pin2:hover+ul {
+                                        display: block;
+                                        color: #fff;
+                                        position: absolute;
+                                        left: 45%;
+                                        top: 22%;
+                                        font-size: 0.9em;
+                                    }
+                                    .pin1:hover+p {
+                                        top: 64%;
+                                    }
+                                    .pin3:hover+p {
+                                        top: 50%;
+                                    }
+                                    .pin4:hover+p {
+                                        top: 62%;
+                                    }
                                 }
                                 
                                 @media (max-width: 1023.98px) {
@@ -1090,6 +1107,18 @@
                                         font-size: 0.5em;
                                         line-height: 10px;
                                         color: #FFFFFF;
+                                    }
+                                    .pin2:hover+ul {
+                                        font-size: 0.6em;
+                                    }
+                                    .pin1:hover+p {
+                                        font-size: 0.6em;
+                                    }
+                                    .pin3:hover+p {
+                                        font-size: 0.6em;
+                                    }
+                                    .pin4:hover+p {
+                                        font-size: 0.6em;
                                     }
                                 }
                                 
