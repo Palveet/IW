@@ -780,6 +780,15 @@
                                 }
                                 
                                 @media (max-width: 991.98px) {
+                                    .container {
+                                        max-width: 100%;
+                                    }
+                                    .blue-nav {
+                                        padding: 0 12.4%!important;
+                                    }
+                                    .our-projects .owl-carousel {
+                                        padding: 0 14.5%;
+                                    }
                                     .card {
                                         width: 100%;
                                     }
@@ -832,9 +841,9 @@
                                         font-size: 30px;
                                         color: white;
                                     }
-                                    .our-mentors .owl-carousel .owl-nav button.owl-next,
-                                    .our-mentors .owl-carousel .owl-nav button.owl-prev,
-                                    .our-mentors .owl-carousel button.owl-dot {
+                                    .blue-nav .owl-nav button.owl-next,
+                                    .blue-nav .owl-nav button.owl-prev,
+                                    .blue-nav button.owl-dot {
                                         font-size: 30px;
                                         color: #109FDD!important;
                                     }
@@ -1167,11 +1176,16 @@
                                     .web-dev {
                                         position: absolute;
                                         top: 50%;
-                                        left: -15%;
+                                        left: -20%;
                                     }
                                     .app-dev {
                                         position: absolute;
                                         top: 35%;
-                                        left: 25%;
+                                        left: 20%;
+                                    }
+                                    .bus-sol {
+                                        position: absolute;
+                                        top: 20%;
+                                        left: 60%;
                                     }
                                 }
