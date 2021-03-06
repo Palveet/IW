@@ -1224,3 +1224,39 @@
                                         left: 60%;
                                     }
                                 }
+                                
+                                @media(min-width:1026px) and (max-width:1150px) {
+                                    .who-are-we {
+                                        height: 60vmax;
+                                    }
+                                    .our-services {
+                                        height: 100vmax;
+                                    }
+                                    .our-mentors {
+                                        height: 60vmax;
+                                    }
+                                }
+                                
+                                @media(min-width:570px) and (max-width:830px) {
+                                    .who-are-we {
+                                        height: 95vmax;
+                                    }
+                                    .waw1-bg {
+                                        left: 30px;
+                                    }
+                                    .waw1 {
+                                        left: 65px;
+                                    }
+                                    .waw3 {
+                                        left: 95px;
+                                    }
+                                    .waw2 {
+                                        left: 300px;
+                                    }
+                                    .waw3-bg {
+                                        left: 127px;
+                                    }
+                                    .our-projects .owl-carousel {
+                                        padding: 0 15.5%;
+                                    }
+                                }
