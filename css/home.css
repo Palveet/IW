@@ -968,7 +968,7 @@
                                         padding: 0% 21%!important;
                                     }
                                     .our-projects .owl-carousel {
-                                        padding: 0 15%!important;
+                                        padding: 0 21%!important;
                                     }
                                     .circle {
                                         width: 100px!important;
@@ -1061,14 +1061,20 @@
                                     }
                                     .our-projects {
                                         height: 100vmax;
-                                        padding: 125px 45px 100px;
+                                        padding: 180px 45px 100px;
                                     }
                                     .our-projects .card {
                                         width: 100%!important;
-                                        margin: 0!important;
+                                        margin: 0 auto!important;
                                     }
                                     .our-projects .card-title {
                                         font-size: 11px;
+                                    }
+                                    .our-projects .card-body {
+                                        padding: 1.25rem 0!important;
+                                    }
+                                    .our-projects .card-title {
+                                        width: inherit;
                                     }
                                     .join-our-community {
                                         padding: 15px 0px 75px 75px;
@@ -1175,7 +1181,7 @@
                                         height: 45vmax;
                                     }
                                     .our-projects {
-                                        height: 110vmax;
+                                        height: 130vmax;
                                     }
                                     .our-projects p {
                                         text-align: justify;
