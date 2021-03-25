@@ -1,7 +1,6 @@
 body {
     background: url("/assets/studentchapters.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
     padding-top: 120px;
 }
 
@@ -144,6 +143,15 @@ h3 {
     color: rgba(0, 0, 0, 0.72);
 }
 
+.single {
+    left: 60%;
+    position: absolute;
+    float: right;
+    display: flex;
+    top: 25%;
+    z-index: 1000;
+}
+
 @media(min-width:1000px) {
     .hide-on-lg {
         display: none;
@@ -178,7 +186,7 @@ h3 {
     .content {
         height: 30%;
         width: 80%;
-        margin: 10px auto 0px;
+        margin: 50px auto 0px;
     }
     .leads {
         margin-bottom: 80px;
@@ -193,6 +201,10 @@ h3 {
     .card-title {
         font-size: 1em;
         line-height: 1.2em;
+    }
+    h3 {
+        font-size: 25px;
+        line-height: 30px;
     }
     h5 {
         margin: 0px 6px;
@@ -213,7 +225,7 @@ h3 {
     .content {
         height: 30%;
         width: 80%;
-        margin: 10px auto 0px;
+        margin: 30px auto 0px;
         padding: 10%;
     }
     .leads {
