@@ -37,7 +37,8 @@
                                     font-size: 0.9em;
                                 }
                                 
-                                .loc2 ul {
+                                .loc2 ul,
+                                .loc6 ul {
                                     display: none;
                                 }
                                 
@@ -46,8 +47,17 @@
                                     color: #fff;
                                     position: absolute;
                                     left: 45%;
-                                    top: 7%;
-                                    font-size: 0.9em;
+                                    top: 4%;
+                                    font-size: 0.7em;
+                                }
+                                
+                                .pin6:hover+ul {
+                                    display: block;
+                                    color: #fff;
+                                    position: absolute;
+                                    left: -8%;
+                                    top: 62%;
+                                    font-size: 0.7em;
                                 }
                                 
                                 .loc3 p {
@@ -73,6 +83,19 @@
                                     position: absolute;
                                     left: 3%;
                                     top: 77%;
+                                    font-size: 0.9em;
+                                }
+                                
+                                .loc5 p {
+                                    display: none;
+                                }
+                                
+                                .pin5:hover+p {
+                                    display: block;
+                                    color: #fff;
+                                    position: absolute;
+                                    left: 1%;
+                                    top: 27%;
                                     font-size: 0.9em;
                                 }
                                 
@@ -124,6 +147,30 @@
                                     opacity: 0.5;
                                 }
                                 
+                                .marker5 {
+                                    position: absolute;
+                                    top: 38%;
+                                    left: 29.6%;
+                                    width: 4%;
+                                    height: 2%;
+                                    animation-delay: 0.5s;
+                                    border-radius: 50%;
+                                    background: #109FDD;
+                                    opacity: 0.5;
+                                }
+                                
+                                .marker6 {
+                                    position: absolute;
+                                    top: 60%;
+                                    left: 26.5%;
+                                    width: 4%;
+                                    height: 2%;
+                                    animation-delay: 0.5s;
+                                    border-radius: 50%;
+                                    background: #109FDD;
+                                    opacity: 0.5;
+                                }
+                                
                                 .pin1 {
                                     position: absolute;
                                     top: 75%;
@@ -152,6 +199,22 @@
                                     position: absolute;
                                     top: 77%;
                                     left: 37%;
+                                    width: 3%;
+                                    height: 4%;
+                                }
+                                
+                                .pin5 {
+                                    position: absolute;
+                                    top: 35%;
+                                    left: 30%;
+                                    width: 3%;
+                                    height: 4%;
+                                }
+                                
+                                .pin6 {
+                                    position: absolute;
+                                    top: 58%;
+                                    left: 27%;
                                     width: 3%;
                                     height: 4%;
                                 }
