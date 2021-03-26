@@ -351,55 +351,39 @@
                                 
                                 .waw1 {
                                     position: absolute;
-                                    /* left: 120px;*/
                                     left: 18%;
                                     top: 5%;
-                                    /*top: 18px;*/
                                     width: 45%;
                                     height: 40%;
-                                    /*width: 250px;
-            height: 200px;*/
                                 }
                                 
                                 .waw2 {
                                     position: absolute;
-                                    /*left: 390px;*/
                                     left: 65%;
                                     top: 9%;
-                                    /* top: 47px;*/
                                     width: 30%;
                                     height: 34%;
-                                    /*width: 150px;
-            height: 170px;*/
                                 }
                                 
                                 .waw3 {
                                     position: absolute;
-                                    /*top: 190px;*/
                                     top: 40%;
-                                    /*left: 150px;*/
                                     left: 30%;
-                                    /* width: 350px;
-            height: 170px;*/
                                     width: 60%;
                                     height: 35%;
                                 }
                                 
                                 .waw1-bg {
                                     position: absolute;
-                                    /*left: 85px;*/
                                     left: 12%;
                                     top: 0%;
                                     width: 45%;
                                     height: 40%;
-                                    /*width: 250px;
-            height: 200px;*/
                                     background: rgba(140, 185, 226, 0.42);
                                 }
                                 
                                 .waw3-bg {
                                     position: absolute;
-                                    /*left: 230px;*/
                                     left: 35%;
                                     top: 45%;
                                     width: 60%;
@@ -452,24 +436,18 @@
                                     position: absolute;
                                     top: 50%;
                                     left: 0%;
-                                    /* top: 280px;
-            left: 10px;*/
                                 }
                                 
                                 .app-dev {
                                     position: absolute;
                                     top: 35%;
                                     left: 33%;
-                                    /*top: 220px;
-            left: 280px;*/
                                 }
                                 
                                 .bus-sol {
                                     position: absolute;
                                     top: 20%;
                                     left: 65%;
-                                    /*top: 150px;
-            left: 550px;*/
                                 }
                                 
                                 .our-services-content {
