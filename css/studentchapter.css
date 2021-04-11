@@ -53,18 +53,18 @@ body {
     position: absolute;
     display: flex;
     top: 25%;
-    right: -8%;
+    right: 0%;
     z-index: 1000;
 }
 
 .right-drc .card {
     display: inline-block;
-    width: 200px;
+    width: 196px;
     height: 212px;
     background: #F7F9FA;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin: 10px;
+    margin: 3px;
     padding: 20px 0px;
 }
 
@@ -163,7 +163,10 @@ h3 {
         left: 10%;
     }
     .right-drc {
-        right: -27%;
+        right: -17%;
+    }
+    .single {
+        left: 62%;
     }
     .right {
         right: 12%;
