@@ -241,6 +241,11 @@
                                 
                                 .flip-card-back {
                                     transform: rotateY(180deg);
+                                    padding: 15%;
+                                }
+                                
+                                .flip-card-back p {
+                                    text-align: justify!important;
                                 }
                                 
                                 .container {
