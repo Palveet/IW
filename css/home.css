@@ -794,6 +794,12 @@
                                 }
                                 
                                 @media (max-width: 1023.98px) {
+                                    .flip-card-front {
+                                        padding: 14% 0%;
+                                    }
+                                    .flip-card-back p {
+                                        font-size: 10px!important;
+                                    }
                                     .pin6:hover+ul {
                                         display: block;
                                         color: #fff;
@@ -1074,6 +1080,12 @@
                                 }
                                 
                                 @media (max-width: 575.98px) {
+                                    .flip-card-front {
+                                        padding: 25% 28%;
+                                    }
+                                    .flip-card-back p {
+                                        font-size: 10px!important;
+                                    }
                                     .pin5:hover+p {
                                         display: block;
                                         color: #fff;
