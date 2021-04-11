@@ -1335,9 +1335,6 @@
                                         width: 6em;
                                         height: 7em;
                                     }
-                                    .our-projects .card-img-top {
-                                        margin: 10% 28%;
-                                    }
                                     .our-projects .card-body {
                                         padding: 0px;
                                     }
@@ -1375,7 +1372,7 @@
                                 
                                 @media(min-width:570px) and (max-width:830px) {
                                     .who-are-we {
-                                        height: 95vmax;
+                                        height: 100%;
                                     }
                                     .waw1-bg {
                                         left: 90px;
