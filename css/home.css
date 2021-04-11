@@ -794,6 +794,14 @@
                                 }
                                 
                                 @media (max-width: 1023.98px) {
+                                    .pin6:hover+ul {
+                                        display: block;
+                                        color: #fff;
+                                        position: absolute;
+                                        left: 50%;
+                                        top: 62%;
+                                        font-size: 0.7em;
+                                    }
                                     .intro {
                                         height: 110vh;
                                     }
@@ -1066,6 +1074,14 @@
                                 }
                                 
                                 @media (max-width: 575.98px) {
+                                    .pin5:hover+p {
+                                        display: block;
+                                        color: #fff;
+                                        position: absolute;
+                                        left: 48%;
+                                        top: 20%;
+                                        font-size: 0.9em;
+                                    }
                                     .owl-carousel {
                                         padding: 0% 21%!important;
                                     }
@@ -1350,19 +1366,19 @@
                                         height: 95vmax;
                                     }
                                     .waw1-bg {
-                                        left: 30px;
+                                        left: 90px;
                                     }
                                     .waw1 {
-                                        left: 65px;
+                                        left: 120px;
                                     }
                                     .waw3 {
-                                        left: 95px;
+                                        left: 171px;
                                     }
                                     .waw2 {
-                                        left: 300px;
+                                        left: 360px;
                                     }
                                     .waw3-bg {
-                                        left: 127px;
+                                        left: 200px;
                                     }
                                     .our-projects .owl-carousel {
                                         padding: 0 15.5%;
