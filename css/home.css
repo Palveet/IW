@@ -722,18 +722,74 @@
                                     .pin4:hover+p {
                                         top: 62%;
                                     }
+                                    .marker5 {
+                                        position: absolute;
+                                        top: 39%;
+                                        left: 28.6%;
+                                        width: 4%;
+                                        height: 1%;
+                                        animation-delay: 0.5s;
+                                        border-radius: 50%;
+                                        background: #109FDD;
+                                        opacity: 0.5;
+                                    }
+                                    .pin5 {
+                                        position: absolute;
+                                        top: 38%;
+                                        left: 29%;
+                                        width: 3%;
+                                        height: 2%;
+                                    }
+                                    .pin6 {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 27%;
+                                        width: 3%;
+                                        height: 2%;
+                                    }
+                                    .marker6 {
+                                        position: absolute;
+                                        top: 51%;
+                                        left: 26.5%;
+                                        width: 4%;
+                                        height: 1%;
+                                        animation-delay: 0.5s;
+                                        border-radius: 50%;
+                                        background: #109FDD;
+                                        opacity: 0.5;
+                                    }
+                                    .pin5:hover+p {
+                                        display: block;
+                                        color: #fff;
+                                        position: absolute;
+                                        left: -4%;
+                                        top: 30%;
+                                        font-size: 0.9em;
+                                    }
+                                    .pin6:hover+ul {
+                                        display: block;
+                                        color: #fff;
+                                        position: absolute;
+                                        left: -22%;
+                                        top: 54%;
+                                        font-size: 0.7em;
+                                    }
                                     h1 {
                                         font-size: 36px;
                                     }
                                     .our-projects p,
                                     .our-mentors p,
                                     .our-services p {
-                                        font-size: 20px;
-                                        line-height: 20px;
+                                        font-size: 16px;
+                                        line-height: 17px;
                                     }
                                     .our-services .card {
                                         height: 395px;
                                         width: 240px;
+                                    }
+                                    .flip-card-back p {
+                                        text-align: justify!important;
+                                        font-size: 12px;
                                     }
                                 }
                                 
