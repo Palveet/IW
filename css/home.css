@@ -1,5 +1,5 @@
                                 body {
-                                    background: url("/assets/bg.png");
+                                    background: url("/assets/bg.webp");
                                     background-size: contain;
                                     padding-top: 91px;
                                 }
@@ -253,7 +253,7 @@
                                 }
                                 
                                 .intro {
-                                    background: url("/assets/intro_bg.png");
+                                    background: url("/assets/intro_bg.webp");
                                     background-repeat-y: no-repeat;
                                     background-size: cover;
                                     width: 100vw;
@@ -401,7 +401,7 @@
                                 }
                                 
                                 .our-services {
-                                    background: url("/assets/our-services-bg.png");
+                                    background: url("/assets/our-services-bg.webp");
                                     background-size: cover;
                                     width: 100vw;
                                     height: 75vmax;
@@ -505,7 +505,7 @@
                                 }
                                 
                                 .our-projects {
-                                    background: url("/assets/our-projects-bg.png");
+                                    background: url("/assets/our-projects-bg.webp");
                                     background-size: cover;
                                     width: 100vw;
                                     height: 70vmax;
