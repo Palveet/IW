@@ -1,6 +1,4 @@
                                 body {
-                                    background: url("/assets/bg.webp");
-                                    background-size: contain;
                                     padding-top: 91px;
                                 }
                                 
@@ -524,7 +522,7 @@
                                 
                                 .our-projects .card {
                                     width: 200px!important;
-                                    height: 230px!important;
+                                    height: 245px!important;
                                     background: #F7F9FA;
                                     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
                                     border-radius: 10px;
@@ -559,8 +557,6 @@
                                 }
                                 
                                 .join-our-community {
-                                    background: url("/assets/bg.png");
-                                    background-size: cover;
                                     width: 100vw;
                                     height: 50vmax;
                                     padding: 100px 0px 100px 100px;
@@ -1081,7 +1077,7 @@
                                 
                                 @media (max-width: 575.98px) {
                                     .flip-card-front {
-                                        padding: 25% 28%;
+                                        padding: 25% 29.5%;
                                     }
                                     .flip-card-back p {
                                         font-size: 10px!important;
@@ -1174,6 +1170,9 @@
                                     .our-services {
                                         padding-top: 40px;
                                     }
+                                    .our-services h5 {
+                                        font-size: 1rem;
+                                    }
                                     .our-services-content {
                                         margin-top: 135px;
                                         padding: 0px 60px;
@@ -1251,7 +1250,7 @@
                                         height: 25px;
                                         background: #109FDD;
                                         border-radius: 2px;
-                                        font-size: 0.2em;
+                                        font-size: 7px;
                                     }
                                     .google-play {
                                         position: relative;
