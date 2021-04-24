@@ -209,6 +209,10 @@ h3 {
     .leads {
         margin-bottom: 80px;
     }
+    .card-title {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
 }
 
 @media (max-width: 575.98px) {
